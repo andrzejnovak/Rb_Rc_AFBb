@@ -38,6 +38,16 @@
     "passes": true,
     "method": "A_FB^b purity-corrected across kappa (MC expected, Phase 4a)"
   },
+  "operating_point_stability_sf_fulldata": {
+    "chi2": 4.4,
+    "ndf": 14,
+    "chi2_ndf": 0.314,
+    "p_value": 0.99,
+    "passes": true,
+    "n_configs": 15,
+    "method": "SF-corrected 3-tag R_b stability across 15 threshold configurations, full data",
+    "source": "phase4_inference/4c_observed/outputs/sf_corrected_fulldata.json"
+  },
   "kappa_consistency_fulldata": {
     "chi2": 11.0,
     "ndf": 3,

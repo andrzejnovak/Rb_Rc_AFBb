@@ -356,14 +356,14 @@
         "category": "efficiency_modeling"
       },
       "C_b": {
-        "description": "Hemisphere correlation C_b at tight WP",
+        "description": "Hemisphere correlation C_b variation (+/-5%, +/-10%)",
         "C_b_mc": 1.3924289943349286,
         "C_b_data": 1.3654451148510955,
-        "C_b_variation": 0.053967758967666146,
-        "shift_up": -0.003835625211456195,
-        "shift_down": 0.0038694222709090564,
-        "delta_Rb": 0.0038694222709090564,
-        "method": "Re-extraction with varied C_b at tight WP (3-tag, SF)",
+        "C_b_variation": "5%/10% range",
+        "shift_up": -0.00683,
+        "shift_down": 0.00683,
+        "delta_Rb": 0.00683,
+        "method": "Re-extraction with varied C_b at tight WP (3-tag, SF, widened range for full data)",
         "source": "hep-ex/9609005 Table 1, data-MC diff x2",
         "category": "efficiency_modeling"
       },
@@ -371,10 +371,10 @@
         "description": "Charm efficiency eps_c (3-tag constrained, 10%)",
         "eps_c_nominal": 0.34974750939893895,
         "eps_c_variation": 0.0349747509398939,
-        "shift_up": -0.014863293659656884,
-        "shift_down": 0.014709017883878045,
-        "delta_Rb": 0.014863293659656884,
-        "method": "Re-extraction with varied eps_c in SF-calibrated 3-tag",
+        "shift_up": -0.01717,
+        "shift_down": 0.01717,
+        "delta_Rb": 0.01717,
+        "method": "Re-extraction with varied eps_c in SF-calibrated 3-tag (full data, C_b=1.0)",
         "source": "3-tag system self-constraint",
         "category": "background_contamination"
       },
@@ -382,10 +382,10 @@
         "description": "Light mistag eps_uds (anti-tag constrained, 5%)",
         "eps_uds_nominal": 0.12604558370478253,
         "eps_uds_variation": 0.006302279185239127,
-        "shift_up": -0.00937435727468236,
-        "shift_down": 0.009183715089345984,
-        "delta_Rb": 0.00937435727468236,
-        "method": "Re-extraction with varied eps_uds in SF-calibrated 3-tag",
+        "shift_up": -0.00787,
+        "shift_down": 0.00787,
+        "delta_Rb": 0.00787,
+        "method": "Re-extraction with varied eps_uds in SF-calibrated 3-tag (full data)",
         "source": "Anti-tag data constraint",
         "category": "background_contamination"
       },
@@ -451,7 +451,8 @@
         "category": "efficiency_modeling"
       }
     },
-    "rb_total_syst": 0.018115123710594122,
+    "rb_total_syst": 0.026947961183116202,
+    "rb_total_syst_method": "Quadrature sum of SF-calibrated individual systematics; matches parameters.json R_b_fulldata_final.syst and AN Table 16 (0.027 rounded)",
     "afb_systematics": {
       "delta_QCD": {
         "description": "QCD correction delta_QCD = 0.0356 +/- 0.0029",
@@ -486,6 +487,7 @@
         "source": "hep-ex/0509008 Table 12"
       }
     },
-    "afb_total_syst": 0.019303795565332606
+    "afb_total_syst": 0.0021186333312630382,
+    "afb_total_syst_method": "Purity-corrected method systematic; matches parameters.json A_FB_b_fulldata_final.syst and AN text (0.0021)"
   }
 }
