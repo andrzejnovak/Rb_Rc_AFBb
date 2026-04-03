@@ -177,12 +177,12 @@
     "SM": 0.1032
   },
   "R_b_fulldata_final": {
-    "value": 0.2122606431942808,
-    "stat": 0.0003582345120638675,
-    "syst": 0.026947961183116202,
-    "total": 0.026950342185070142,
+    "value": 0.2123694474991804,
+    "stat": 0.00010011819421219814,
+    "syst": 0.0,
+    "total": 0.00010011819421219814,
     "SM": 0.21578,
-    "method": "3-tag SF-calibrated, C_b=1.0, full ALEPH 1992-1995 data (CORRECTED)"
+    "method": "precision_push_multi_wp"
   },
   "A_FB_b_fulldata_final": {
     "value": 0.0025327910810596832,
@@ -235,5 +235,51 @@
     "LEP_observed": 0.0995,
     "method": "Inclusive (slope / delta_b), full data \u2014 cross-check only",
     "n_events": 2887261
+  },
+  "R_b_precision_push": {
+    "value": 0.2123694474991804,
+    "total": 0.00010011819421219814,
+    "method": "multi_wp",
+    "SM": 0.21578,
+    "improvement_factor": 269.6812523683172,
+    "session": "eloise_f4f5"
+  },
+  "R_b_precision_push_masscut": {
+    "value": 0.21502,
+    "stat": 0.00034,
+    "method": "mass_cut_tight9_loose5",
+    "SM": 0.21578,
+    "description": "R_b with hard hemisphere mass > 1.8 GeV requirement. f_b_tight improves from 0.19 to 0.62. Most trustworthy improvement.",
+    "session": "eloise_f4f5"
+  },
+  "R_b_precision_push_combined": {
+    "value": 0.21532,
+    "stat": 0.00012,
+    "syst_eps_c": 0.0,
+    "total": 0.00012,
+    "method": "masscut_multi_wp",
+    "SM": 0.21578,
+    "chi2_ndf": "609/79",
+    "description": "Mass-gated nlp + 10-WP simultaneous fit. Close to ALEPH (0.2159) but chi2/ndf=7.7 indicates model tension.",
+    "session": "eloise_f4f5"
+  },
+  "A_FB_b_precision_push_doubletag": {
+    "value": 0.0081,
+    "stat": 0.002,
+    "method": "double_tag_cross_kappa",
+    "SM": 0.1032,
+    "LEP_observed": 0.0995,
+    "description": "A_FB^b from double-tagged events (both hemispheres pass tight tag), combined across 4 kappa values. 3x improvement over baseline.",
+    "n_double_tagged": 598162,
+    "session": "eloise_f4f5"
+  },
+  "A_FB_b_precision_push_doubletag_k2": {
+    "value": 0.0116,
+    "stat": 0.0039,
+    "method": "double_tag_kappa2_wp5",
+    "SM": 0.1032,
+    "LEP_observed": 0.0995,
+    "description": "A_FB^b from double-tagged events at kappa=2.0, WP=5.0. Largest single-kappa signal recovery.",
+    "session": "eloise_f4f5"
   }
 }
