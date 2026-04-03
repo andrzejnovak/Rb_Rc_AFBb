@@ -1,0 +1,172 @@
+{
+  "rb_systematics": {
+    "sigma_d0": {
+      "description": "sigma_d0 parameterization (+/-10% scale factor)",
+      "delta_Rb": 0.00075,
+      "shift_up": 0.00075,
+      "shift_down": -0.00075,
+      "method": "Scaled from ALEPH published (0.00050) x1.5",
+      "source": "hep-ex/9609005, STRATEGY.md Section 7.1",
+      "category": "efficiency_modeling"
+    },
+    "sigma_d0_form": {
+      "description": "sigma_d0 angular form: sin(theta) vs sin^{3/2}(theta)",
+      "delta_Rb": 0.0004,
+      "shift_up": 0.0004,
+      "shift_down": -0.0004,
+      "method": "Scaled from MC statistics systematic",
+      "source": "STRATEGY.md Section 5.1",
+      "category": "efficiency_modeling"
+    },
+    "C_b": {
+      "description": "Hemisphere correlation C_b at operating WP",
+      "C_b_mc": 1.3924289943349286,
+      "C_b_data": 1.3654451148510955,
+      "C_b_variation": 0.053967758967666146,
+      "shift_up": -0.0037994172349387068,
+      "shift_down": 0.003829402686820277,
+      "delta_Rb": 0.003829402686820277,
+      "method": "Re-extraction with varied C_b at tight WP (3-tag)",
+      "source": "hep-ex/9609005 Table 1, data-MC diff x2 per [D17]",
+      "category": "efficiency_modeling"
+    },
+    "eps_c": {
+      "description": "Charm efficiency eps_c (constrained from 3-tag fit)",
+      "eps_c_nominal": 0.3594398505805091,
+      "eps_c_variation": 0.03594398505805091,
+      "variation_method": "10% relative from 3-tag fit constraint",
+      "shift_up": 0.010604970851777779,
+      "shift_down": 0.044305204724435165,
+      "delta_Rb": 0.044305204724435165,
+      "method": "Re-extraction with varied eps_c in 3-tag calibration",
+      "source": "3-tag system self-constraint",
+      "category": "background_contamination",
+      "improvement_note": "Was 30% relative in original analysis; now 10% from 3-tag"
+    },
+    "eps_uds": {
+      "description": "Light-flavour mistag eps_uds (constrained from anti-tag)",
+      "eps_uds_nominal": 0.12953860872673748,
+      "eps_uds_variation": 0.006476930436336874,
+      "variation_method": "5% relative from anti-tag data constraint",
+      "shift_up": 0.01714745696273151,
+      "shift_down": 0.03760593663787476,
+      "delta_Rb": 0.03760593663787476,
+      "method": "Re-extraction with varied eps_uds in 3-tag calibration",
+      "source": "Anti-tag data constraint",
+      "category": "background_contamination",
+      "improvement_note": "Was 50-100% relative in original analysis; now 5% from anti-tag"
+    },
+    "R_c": {
+      "description": "R_c constraint (+/- 0.0030)",
+      "R_c_nominal": 0.17223,
+      "R_c_variation": 0.003,
+      "shift_up": 0.02550009917481444,
+      "shift_down": 0.029511699676336406,
+      "delta_Rb": 0.029511699676336406,
+      "method": "Re-extraction with varied R_c in 3-tag",
+      "source": "hep-ex/0509008 LEP combined",
+      "category": "sample_composition"
+    },
+    "g_bb": {
+      "description": "Gluon splitting g_bb = (0.251 +/- 0.063)%",
+      "g_bb": 0.00251,
+      "g_bb_err": 0.00063,
+      "delta_Rb": 0.00011106505008251768,
+      "method": "Effective eps_uds variation from g_bb uncertainty",
+      "source": "LEP average, inspire_416138",
+      "category": "sample_composition"
+    },
+    "g_cc": {
+      "description": "Gluon splitting g_cc = (2.96 +/- 0.38)%",
+      "g_cc": 0.0296,
+      "g_cc_err": 0.0038,
+      "delta_Rb": 0.00014447674192784025,
+      "method": "Effective eps_uds variation from g_cc uncertainty",
+      "source": "world average, hep-ex/0302003",
+      "category": "sample_composition"
+    },
+    "hadronization": {
+      "description": "B hadron fragmentation model (Peterson vs Bowler-Lund)",
+      "delta_Rb": 0.00045,
+      "method": "Scaled from published ALEPH systematic (0.00030) x1.5",
+      "source": "hep-ex/9609005",
+      "category": "mc_model"
+    },
+    "physics_params": {
+      "description": "B hadron lifetimes, decay multiplicities, <x_E>",
+      "delta_Rb": 0.0002,
+      "method": "Propagated from PDG uncertainties",
+      "source": "PDG 2024, STRATEGY.md Section 7.1",
+      "category": "mc_model"
+    },
+    "tau_contamination": {
+      "description": "Z -> tau+tau- contamination (~0.3%)",
+      "delta_Rb": 5e-05,
+      "method": "Corrected using published selection efficiency",
+      "source": "inspire_367499",
+      "category": "background_contamination"
+    },
+    "selection_bias": {
+      "description": "Event selection bias (passesAll subcuts)",
+      "delta_Rb": 0.0001,
+      "method": "Ratio measurement: reduced sensitivity",
+      "source": "STRATEGY.md Section 7.1",
+      "category": "efficiency_modeling"
+    },
+    "mc_statistics": {
+      "description": "MC statistical uncertainty on efficiency calibration",
+      "delta_Rb": 0.0004,
+      "method": "Poisson uncertainty on MC counts in 3-tag calibration",
+      "source": "STRATEGY.md Section 8.2",
+      "category": "efficiency_modeling"
+    }
+  },
+  "afb_systematics": {
+    "delta_QCD": {
+      "description": "QCD correction delta_QCD = 0.0356 +/- 0.0029",
+      "delta_AFB": 0.00022672145368474912,
+      "source": "hep-ex/0509008 Section 5.5"
+    },
+    "charge_model": {
+      "description": "Charge separation model (kappa variation spread)",
+      "delta_AFB": 0.0051890120160684675,
+      "source": "Spread across kappa values"
+    },
+    "charm_asymmetry": {
+      "description": "Charm asymmetry A_FB^c +/- 0.0035",
+      "delta_AFB": 0.0013968046158124015,
+      "source": "hep-ex/0509008"
+    },
+    "angular_efficiency": {
+      "description": "Angular dependence of b-tag efficiency",
+      "delta_AFB": 0.002,
+      "source": "STRATEGY.md Section 7.4"
+    },
+    "purity_uncertainty": {
+      "description": "Flavour purity uncertainty (from 3-tag constraint on eps_c/eps_uds)",
+      "delta_AFB": 0.01,
+      "source": "3-tag system flavour fraction uncertainty",
+      "notes": "Dominant systematic: f_b uncertainty of ~5% at eps_c/eps_b ratio"
+    },
+    "delta_b_published": {
+      "description": "Published delta_b uncertainty (~5%)",
+      "delta_AFB": 0.003908990580771537,
+      "source": "ALEPH hep-ex/0509008 Table 12"
+    }
+  },
+  "rb_total": {
+    "stat": 0.0002649384172009339,
+    "syst": 0.06529879851715782,
+    "total": 0.06529933598551582
+  },
+  "afb_total": {
+    "stat": 0.0051890120160684675,
+    "syst": 0.012174092114641622,
+    "total": 0.01323383408233163
+  },
+  "method_notes": {
+    "eps_c": "Constrained from 3-tag system (10% variation vs old 30%)",
+    "eps_uds": "Constrained from anti-tag data (5% variation vs old 50-100%)",
+    "C_b": "Per-WP values from MC, data-MC diff x2"
+  }
+}

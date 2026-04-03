@@ -1,0 +1,221 @@
+{
+  "strategy": "C_b=1.01 (published ALEPH, hep-ex/9609005 Table 1)",
+  "C_b_used": 1.01,
+  "C_b_measured_data_10pct": 1.52003903867915,
+  "C_b_measured_data_sigma": 0.016012468739524745,
+  "extraction_results": [
+    {
+      "threshold": 7.0,
+      "R_b": 0.20788305100929405,
+      "sigma_stat": 0.06629266584708711,
+      "eps_b": 0.3115568860105541,
+      "eps_c": 0.6225424549257154,
+      "eps_uds_eff": 0.1873204889281978,
+      "f_s": 0.2881054094038326,
+      "f_d": 0.10888101251788641,
+      "N_had": 288627,
+      "N_t": 166310,
+      "N_tt": 31426,
+      "C_b": 1.01,
+      "n_valid_toys": 1000
+    },
+    {
+      "threshold": 8.0,
+      "R_b": null,
+      "sigma_stat": 0.1638611703403953,
+      "eps_b": null,
+      "eps_c": 0.5696866563951978,
+      "eps_uds_eff": 0.15443234817154078,
+      "f_s": 0.24147948736604682,
+      "f_d": 0.08025929660080311,
+      "N_had": 288627,
+      "N_t": 139395,
+      "N_tt": 23165,
+      "C_b": 1.01,
+      "n_valid_toys": 121
+    },
+    {
+      "threshold": 9.0,
+      "R_b": null,
+      "sigma_stat": 0.19832317348212017,
+      "eps_b": null,
+      "eps_c": 0.503790010230399,
+      "eps_uds_eff": 0.12160035764383771,
+      "f_s": 0.20351699598443665,
+      "f_d": 0.060129509713228495,
+      "N_had": 288627,
+      "N_t": 117481,
+      "N_tt": 17355,
+      "C_b": 1.01,
+      "n_valid_toys": 356
+    },
+    {
+      "threshold": 10.0,
+      "R_b": 0.26781164931837415,
+      "sigma_stat": 0.08792959772065953,
+      "eps_b": 0.1721213163077162,
+      "eps_c": 0.4312079160965112,
+      "eps_uds_eff": 0.09132570951423927,
+      "f_s": 0.17150162666694385,
+      "f_d": 0.04470822203050997,
+      "N_had": 288627,
+      "N_t": 99000,
+      "N_tt": 12904,
+      "C_b": 1.01,
+      "n_valid_toys": 997
+    }
+  ],
+  "best_wp": {
+    "threshold": 7.0,
+    "R_b": 0.20788305100929405,
+    "sigma_stat": 0.06629266584708711,
+    "eps_b": 0.3115568860105541,
+    "eps_c": 0.6225424549257154,
+    "eps_uds_eff": 0.1873204889281978,
+    "f_s": 0.2881054094038326,
+    "f_d": 0.10888101251788641,
+    "N_had": 288627,
+    "N_t": 166310,
+    "N_tt": 31426,
+    "C_b": 1.01,
+    "n_valid_toys": 1000
+  },
+  "stability": {
+    "R_b_combined": 0.22960184189752492,
+    "sigma_combined": 0.0529341383621049,
+    "chi2": 0.2961684525884739,
+    "ndf": 1,
+    "p_value": 0.5862944877271588,
+    "passes": true,
+    "n_valid_wp": 2
+  },
+  "cb_scan": [
+    {
+      "C_b": 1.0,
+      "R_b": 0.19558296793174015
+    },
+    {
+      "C_b": 1.02,
+      "R_b": 0.22227346524898356
+    },
+    {
+      "C_b": 1.04,
+      "R_b": 0.2610912154689184
+    },
+    {
+      "C_b": 1.06,
+      "R_b": 0.3317095174404252
+    },
+    {
+      "C_b": 1.08,
+      "R_b": null
+    },
+    {
+      "C_b": 1.1,
+      "R_b": null
+    },
+    {
+      "C_b": 1.12,
+      "R_b": null
+    },
+    {
+      "C_b": 1.14,
+      "R_b": null
+    },
+    {
+      "C_b": 1.16,
+      "R_b": null
+    },
+    {
+      "C_b": 1.18,
+      "R_b": null
+    },
+    {
+      "C_b": 1.2,
+      "R_b": null
+    },
+    {
+      "C_b": 1.22,
+      "R_b": null
+    },
+    {
+      "C_b": 1.24,
+      "R_b": null
+    },
+    {
+      "C_b": 1.26,
+      "R_b": null
+    },
+    {
+      "C_b": 1.28,
+      "R_b": null
+    },
+    {
+      "C_b": 1.3,
+      "R_b": null
+    },
+    {
+      "C_b": 1.32,
+      "R_b": null
+    },
+    {
+      "C_b": 1.34,
+      "R_b": null
+    },
+    {
+      "C_b": 1.36,
+      "R_b": null
+    },
+    {
+      "C_b": 1.38,
+      "R_b": null
+    },
+    {
+      "C_b": 1.4,
+      "R_b": null
+    },
+    {
+      "C_b": 1.42,
+      "R_b": null
+    },
+    {
+      "C_b": 1.44,
+      "R_b": null
+    },
+    {
+      "C_b": 1.46,
+      "R_b": null
+    },
+    {
+      "C_b": 1.48,
+      "R_b": null
+    },
+    {
+      "C_b": 1.5,
+      "R_b": null
+    },
+    {
+      "C_b": 1.52,
+      "R_b": null
+    },
+    {
+      "C_b": 1.54,
+      "R_b": null
+    },
+    {
+      "C_b": 1.56,
+      "R_b": null
+    },
+    {
+      "C_b": 1.58,
+      "R_b": null
+    },
+    {
+      "C_b": 1.6,
+      "R_b": null
+    }
+  ],
+  "C_b_systematic_range": 0.12382646643113115,
+  "finding_cb_constraint": "The quadratic R_b extraction equation has real solutions for all C_b values at WP=7.0 on 10% data. The measured C_b is 1.52 (data) / 1.54 (MC). Using the published ALEPH C_b=1.01 (which assumes per-hemisphere vertex reconstruction) gives R_b=0.208. The difference C_b(measured) - C_b(published) is driven by the absence of per-hemisphere vertex in our analysis [D17]. Resolution: use C_b=1.01 for the primary extraction; assign the full R_b variation over the valid C_b range as a systematic uncertainty on C_b.",
+  "cb_scan_wp": 7.0
+}

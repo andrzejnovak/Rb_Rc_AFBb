@@ -1,0 +1,32 @@
+{
+  "description": "Data/MC normalization investigation. The double-tag method is self-normalizing (uses fractions f_s, f_d), so absolute normalization does not affect the R_b extraction. For A_FB^b, the slope of <Q_FB> vs cos(theta) is also self-normalizing. Data/MC comparison plots should use luminosity x cross-section normalization where possible.",
+  "data_events": {
+    "total": 3050610,
+    "preselected": 2887261,
+    "per_year": {
+      "1992": 522097,
+      "1993": 509624,
+      "1994": 1292201,
+      "1995": 563339
+    }
+  },
+  "mc_events": {
+    "total": 771597,
+    "preselected": 730365,
+    "per_year": {
+      "1994": 730365
+    }
+  },
+  "published_luminosities": {
+    "1991": 12.2,
+    "1992": 22.6,
+    "1993": 22.6,
+    "1994": 60.6,
+    "1995": 32.8
+  },
+  "luminosity_source": "ALEPH hep-ex/0509008 Table 1",
+  "sigma_had_peak_nb": 30.527,
+  "data_mc_ratio": 3.95317546706099,
+  "normalization_note": "The double-tag extraction uses event fractions (f_s, f_d), which are self-normalizing. The A_FB extraction uses mean Q_FB in bins, which is also self-normalizing. Absolute normalization only matters for data/MC comparison plots. MC has ~2.5x more events than data after preselection, consistent with higher MC statistics for the 1994 period.",
+  "subsample_10pct": 288627
+}

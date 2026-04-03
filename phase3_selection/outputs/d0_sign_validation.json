@@ -1,0 +1,140 @@
+{
+  "b_enrichment_method": "tight_double_tag",
+  "b_enrichment_definition": "combined_tag > 8 in both hemispheres",
+  "data": {
+    "n_events": 2887261,
+    "n_b_enriched_events": 231054,
+    "n_tracks_b_enriched": 4819005,
+    "n_tracks_total": 46731904,
+    "thresholds": {
+      "1.0": {
+        "n_pos_b": 2323114,
+        "n_neg_b": 977715,
+        "n_pos_all": 13989673,
+        "n_neg_all": 10245037,
+        "asymmetry_b": 0.40759427404449006,
+        "asymmetry_all": 0.15451540373291037
+      },
+      "2.0": {
+        "n_pos_b": 1775300,
+        "n_neg_b": 599976,
+        "n_pos_all": 8550644,
+        "n_neg_all": 5376218,
+        "asymmetry_b": 0.4948157603579542,
+        "asymmetry_all": 0.22793548180487463
+      },
+      "3.0": {
+        "n_pos_b": 1396466,
+        "n_neg_b": 418518,
+        "n_pos_all": 6216581,
+        "n_neg_all": 3529614,
+        "asymmetry_b": 0.5388190749890908,
+        "asymmetry_all": 0.2756939503057347
+      },
+      "5.0": {
+        "n_pos_b": 997984,
+        "n_neg_b": 277207,
+        "n_pos_all": 4376562,
+        "n_neg_all": 2344515,
+        "asymmetry_b": 0.5652306203541273,
+        "asymmetry_all": 0.30233949112619896
+      },
+      "7.0": {
+        "n_pos_b": 795511,
+        "n_neg_b": 224214,
+        "n_pos_all": 3558627,
+        "n_neg_all": 1912253,
+        "asymmetry_b": 0.5602461447939395,
+        "asymmetry_all": 0.30093403620624104
+      },
+      "10.0": {
+        "n_pos_b": 621347,
+        "n_neg_b": 182185,
+        "n_pos_all": 2853152,
+        "n_neg_all": 1550495,
+        "asymmetry_b": 0.5465395279839509,
+        "asymmetry_all": 0.2958132202694721
+      }
+    },
+    "mean_significance": {
+      "positive_all": 5.4388885498046875,
+      "negative_all": -3.606706142425537,
+      "positive_b_enriched": 9.120444297790527,
+      "negative_b_enriched": -4.975578308105469
+    },
+    "tail_ratio_3sigma": {
+      "frac_positive_b": 0.2897830568758489,
+      "frac_negative_b": 0.08684738862067999,
+      "ratio_pos_over_neg": 3.336692806522062
+    }
+  },
+  "mc": {
+    "n_events": 730365,
+    "n_b_enriched_events": 62952,
+    "n_tracks_b_enriched": 1305680,
+    "n_tracks_total": 11911154,
+    "thresholds": {
+      "1.0": {
+        "n_pos_b": 638818,
+        "n_neg_b": 259497,
+        "n_pos_all": 3617514,
+        "n_neg_all": 2623884,
+        "asymmetry_b": 0.4222583392239916,
+        "asymmetry_all": 0.15919991002015896
+      },
+      "2.0": {
+        "n_pos_b": 485095,
+        "n_neg_b": 154595,
+        "n_pos_all": 2171489,
+        "n_neg_all": 1327157,
+        "asymmetry_b": 0.5166565054948491,
+        "asymmetry_all": 0.2413310749358466
+      },
+      "3.0": {
+        "n_pos_b": 376859,
+        "n_neg_b": 104000,
+        "n_pos_all": 1541533,
+        "n_neg_all": 829938,
+        "asymmetry_b": 0.5674407674598999,
+        "asymmetry_all": 0.3000648120934222
+      },
+      "5.0": {
+        "n_pos_b": 265587,
+        "n_neg_b": 67464,
+        "n_pos_all": 1066724,
+        "n_neg_all": 533604,
+        "asymmetry_b": 0.5948728573101417,
+        "asymmetry_all": 0.33313170799986
+      },
+      "7.0": {
+        "n_pos_b": 210599,
+        "n_neg_b": 54646,
+        "n_pos_all": 861980,
+        "n_neg_all": 432796,
+        "asymmetry_b": 0.5879583027012761,
+        "asymmetry_all": 0.33147355218199903
+      },
+      "10.0": {
+        "n_pos_b": 162851,
+        "n_neg_b": 44463,
+        "n_pos_all": 687539,
+        "n_neg_all": 349186,
+        "asymmetry_b": 0.5710564650723058,
+        "asymmetry_all": 0.3263671658347199
+      }
+    },
+    "mean_significance": {
+      "positive_all": 5.312653541564941,
+      "negative_all": -3.407034397125244,
+      "positive_b_enriched": 8.91342830657959,
+      "negative_b_enriched": -4.754368305206299
+    },
+    "tail_ratio_3sigma": {
+      "frac_positive_b": 0.2886304454383923,
+      "frac_negative_b": 0.07965198210893941,
+      "ratio_pos_over_neg": 3.623644230769231
+    }
+  },
+  "gate_passed": true,
+  "gate_message": "PASS: d0 sign convention is physics-meaningful. Positive tail is enhanced in tight-tag b-enriched sample as expected for displaced decay vertices."
+}

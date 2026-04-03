@@ -1,0 +1,80 @@
+{
+  "rb_systematics": {
+    "sigma_d0": {
+      "delta_Rb": 0.00075,
+      "method": "Scaled from ALEPH (0.00050) x1.5",
+      "source": "hep-ex/9609005"
+    },
+    "sigma_d0_form": {
+      "delta_Rb": 0.0004,
+      "method": "sin(theta) vs sin^{3/2}(theta)",
+      "source": "STRATEGY.md 5.1"
+    },
+    "C_b": {
+      "delta_Rb": 0.12382646643113115,
+      "method": "R_b variation over valid C_b range (1.01-1.10)",
+      "source": "hep-ex/9609005, Phase 4b C_b scan",
+      "notes": "C_b=1.01 is published ALEPH; higher values make discriminant negative"
+    },
+    "eps_c": {
+      "delta_Rb": 0.07275233214092047,
+      "shift_up": null,
+      "shift_down": -0.07275233214092047
+    },
+    "eps_uds": {
+      "delta_Rb": 0.4994226765002402,
+      "shift_up": 0.2613318111048879,
+      "shift_down": 0.4994226765002402
+    },
+    "R_c": {
+      "delta_Rb": 0.019525832551210126,
+      "shift_up": 0.019525832551210126,
+      "shift_down": -0.012655535336105084
+    },
+    "hadronization": {
+      "delta_Rb": 0.00045
+    },
+    "physics_params": {
+      "delta_Rb": 0.0002
+    },
+    "g_bb": {
+      "delta_Rb": 0.00011169117647058825
+    },
+    "g_cc": {
+      "delta_Rb": 0.00025164142565281615
+    },
+    "tau_contamination": {
+      "delta_Rb": 5e-05
+    },
+    "selection_bias": {
+      "delta_Rb": 0.0001
+    },
+    "mc_statistics": {
+      "delta_Rb": 0.0004
+    }
+  },
+  "afb_systematics": {
+    "delta_QCD": {
+      "delta_AFB": 2.4771109400447408e-05
+    },
+    "charge_model": {
+      "delta_AFB": 0.00289645415121835
+    },
+    "charm_asymmetry": {
+      "delta_AFB": 0.0027045454545454547
+    },
+    "angular_efficiency": {
+      "delta_AFB": 0.002
+    }
+  },
+  "rb_total": {
+    "stat": 0.0529341383621049,
+    "syst": 0.5200301691811451,
+    "total": 0.5227173230941451
+  },
+  "afb_total": {
+    "stat": 0.0034597710326180328,
+    "syst": 0.0044389893414687786,
+    "total": 0.005628022918558192
+  }
+}

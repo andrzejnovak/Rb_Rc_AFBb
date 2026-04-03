@@ -1,0 +1,171 @@
+{
+  "description": "Full systematic evaluation on complete dataset",
+  "n_data_events": 2887261,
+  "working_point": {
+    "thr_tight": 8.0,
+    "thr_loose": 4.0
+  },
+  "rb_systematics": {
+    "sigma_d0": {
+      "description": "sigma_d0 parameterization (+/-10% scale factor)",
+      "delta_Rb": 0.00075,
+      "shift_up": 0.00075,
+      "shift_down": -0.00075,
+      "method": "Scaled from ALEPH published (0.00050) x1.5",
+      "source": "hep-ex/9609005, STRATEGY.md Section 7.1",
+      "category": "efficiency_modeling"
+    },
+    "sigma_d0_form": {
+      "description": "sigma_d0 angular form: sin(theta) vs sin^{3/2}(theta)",
+      "delta_Rb": 0.0004,
+      "shift_up": 0.0004,
+      "shift_down": -0.0004,
+      "method": "Scaled from MC statistics systematic",
+      "source": "STRATEGY.md Section 5.1",
+      "category": "efficiency_modeling"
+    },
+    "C_b": {
+      "description": "Hemisphere correlation C_b at tight WP",
+      "C_b_mc": 1.3924289943349286,
+      "C_b_data": 1.3654451148510955,
+      "C_b_variation": 0.053967758967666146,
+      "shift_up": -0.003835625211456195,
+      "shift_down": 0.0038694222709090564,
+      "delta_Rb": 0.0038694222709090564,
+      "method": "Re-extraction with varied C_b at tight WP (3-tag, SF)",
+      "source": "hep-ex/9609005 Table 1, data-MC diff x2",
+      "category": "efficiency_modeling"
+    },
+    "eps_c": {
+      "description": "Charm efficiency eps_c (3-tag constrained, 10%)",
+      "eps_c_nominal": 0.34974750939893895,
+      "eps_c_variation": 0.0349747509398939,
+      "shift_up": -0.014863293659656884,
+      "shift_down": 0.014709017883878045,
+      "delta_Rb": 0.014863293659656884,
+      "method": "Re-extraction with varied eps_c in SF-calibrated 3-tag",
+      "source": "3-tag system self-constraint",
+      "category": "background_contamination"
+    },
+    "eps_uds": {
+      "description": "Light mistag eps_uds (anti-tag constrained, 5%)",
+      "eps_uds_nominal": 0.12604558370478253,
+      "eps_uds_variation": 0.006302279185239127,
+      "shift_up": -0.00937435727468236,
+      "shift_down": 0.009183715089345984,
+      "delta_Rb": 0.00937435727468236,
+      "method": "Re-extraction with varied eps_uds in SF-calibrated 3-tag",
+      "source": "Anti-tag data constraint",
+      "category": "background_contamination"
+    },
+    "R_c": {
+      "description": "R_c constraint (+/- 0.0030)",
+      "R_c_nominal": 0.17223,
+      "R_c_variation": 0.003,
+      "shift_up": -0.0017232548203390818,
+      "shift_down": 0.0017232548203390263,
+      "delta_Rb": 0.0017232548203390818,
+      "method": "Re-extraction with varied R_c",
+      "source": "hep-ex/0509008 LEP combined",
+      "category": "sample_composition"
+    },
+    "g_bb": {
+      "description": "Gluon splitting g_bb = (0.251 +/- 0.063)%%",
+      "delta_Rb": 0.00011106505008251768,
+      "source": "LEP average, inspire_416138",
+      "category": "sample_composition"
+    },
+    "g_cc": {
+      "description": "Gluon splitting g_cc = (2.96 +/- 0.38)%%",
+      "delta_Rb": 0.000140580908248562,
+      "source": "world average, hep-ex/0302003",
+      "category": "sample_composition"
+    },
+    "hadronization": {
+      "description": "B hadron fragmentation (Peterson vs Bowler-Lund)",
+      "delta_Rb": 0.00045,
+      "method": "Scaled from ALEPH published (0.00030) x1.5",
+      "source": "hep-ex/9609005",
+      "category": "mc_model"
+    },
+    "physics_params": {
+      "description": "B hadron lifetimes, decay multiplicities, <x_E>",
+      "delta_Rb": 0.0002,
+      "source": "PDG 2024, STRATEGY.md Section 7.1",
+      "category": "mc_model"
+    },
+    "mc_year_coverage": {
+      "description": "MC only covers 1994; data spans 1992-1995",
+      "delta_Rb": 0.0005,
+      "method": "Estimated from per-year SF variation",
+      "source": "Analysis-specific",
+      "category": "mc_model"
+    },
+    "tau_contamination": {
+      "description": "Z -> tau+tau- contamination (~0.3%%)",
+      "delta_Rb": 5e-05,
+      "source": "inspire_367499",
+      "category": "background_contamination"
+    },
+    "selection_bias": {
+      "description": "Event selection bias (passesAll subcuts)",
+      "delta_Rb": 0.0001,
+      "source": "STRATEGY.md Section 7.1",
+      "category": "efficiency_modeling"
+    },
+    "mc_statistics": {
+      "description": "MC statistical uncertainty on calibration",
+      "delta_Rb": 0.0004,
+      "source": "STRATEGY.md Section 8.2",
+      "category": "efficiency_modeling"
+    }
+  },
+  "rb_summary": {
+    "R_b": 0.18778339827098536,
+    "stat": 0.0001341653434616475,
+    "syst": 0.018115123710594122,
+    "total": 0.018115620535590703,
+    "viability": "True"
+  },
+  "afb_systematics": {
+    "delta_QCD": {
+      "description": "QCD correction delta_QCD = 0.0356 +/- 0.0029",
+      "delta_AFB": 0.0002188696024426609,
+      "source": "hep-ex/0509008 Section 5.5"
+    },
+    "charge_model": {
+      "description": "Charge model (kappa dependence)",
+      "delta_AFB": 0.016271192928770814,
+      "method": "Std dev across kappa values",
+      "source": "Analysis-specific"
+    },
+    "purity_uncertainty": {
+      "description": "MC purity estimation uncertainty",
+      "delta_AFB": 0.01,
+      "method": "10%% variation of f_b",
+      "source": "Analysis-specific (data/MC tagging mismatch)"
+    },
+    "angular_efficiency": {
+      "description": "Angular acceptance correction",
+      "delta_AFB": 0.002,
+      "source": "hep-ex/0509008 Section 5.2"
+    },
+    "charm_asymmetry": {
+      "description": "Charm asymmetry A_FB^c = 0.0682 +/- 0.0035",
+      "delta_AFB": 0.0014,
+      "source": "hep-ex/0509008 LEP combined"
+    },
+    "delta_b_published": {
+      "description": "Published charge separation delta_b uncertainty",
+      "delta_AFB": 0.00137,
+      "source": "hep-ex/0509008 Table 12"
+    }
+  },
+  "afb_summary": {
+    "A_FB_b": -0.07547227670436583,
+    "stat": 0.002640679844298013,
+    "syst": 0.019303795565332606,
+    "total": 0.01948357547444094,
+    "viability": "True"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "description": "Gluon splitting characterization via dijet and hemisphere invariant mass. Z->qq produces m_dijet ~ 91 GeV. Gluon splitting (g->bb/cc) produces events with lower reconstructed dijet mass. The hemisphere mass is also discriminating: B hadrons produce higher hemisphere mass (~5 GeV) than D mesons (~2 GeV) or uds (~0 GeV).",
+  "mc_results": {
+    "n_total": 730365,
+    "n_tagged": 224818,
+    "n_double_tagged": 35715,
+    "dijet_mass_all": {
+      "mean": 83.69917252841992,
+      "median": 84.4423823463212,
+      "std": 8.897596487259877
+    },
+    "dijet_mass_tagged": {
+      "mean": 82.57084953632675,
+      "median": 83.28722276519983
+    },
+    "gluon_splitting": {
+      "low_mass_cut_GeV": 60.0,
+      "n_candidates": 8050,
+      "fraction": 0.011021886317115415,
+      "tag_rate_low_mass": 0.37875776397515526,
+      "tag_rate_high_mass": 0.3070253282847511,
+      "n_very_low": 16,
+      "tag_rate_very_low": 0.25
+    },
+    "hemisphere_mass_asymmetry": {
+      "mean_all": 0.2597229870325061,
+      "mean_tagged": 0.25464826844716953
+    }
+  },
+  "data_hemisphere_mass": {
+    "mean_all": 1.7651277817306597,
+    "mean_tagged": 2.5021025884713888
+  },
+  "data_mc_mass_comparison": {
+    "bin_edges": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5,
+      10.0
+    ],
+    "mc_normalized": [
+      0.48160636006258045,
+      0.1469119060579925,
+      0.10467008820774962,
+      0.0778539999259565,
+      0.05788007969274689,
+      0.04277931882720578,
+      0.029969792993565073,
+      0.02037293243804684,
+      0.012912364030763703,
+      0.00801726584770897,
+      0.005292739211930328,
+      0.0036295027704610306,
+      0.0024448067396040866,
+      0.001689288784740457,
+      0.0011942942625884237,
+      0.000878923791411228,
+      0.000659535637548831,
+      0.0005525839125409125,
+      0.0003948986769523146,
+      0.0002893181279060361
+    ],
+    "data_normalized": [
+      0.4817517488341106,
+      0.14771749389296024,
+      0.1035802520541861,
+      0.07784740728403286,
+      0.056850988230068844,
+      0.04291236397956918,
+      0.029036198090162113,
+      0.02043429380413058,
+      0.013147485009993338,
+      0.008806628914057296,
+      0.005534504774594715,
+      0.0036711636686653343,
+      0.0025607928047968022,
+      0.0017557739284921163,
+      0.0012422274039529202,
+      0.0010479125027759272,
+      0.0007425605152120809,
+      0.0006037641572285143,
+      0.00041291916500111036,
+      0.00034352098600932713
+    ]
+  },
+  "finding": "The dijet invariant mass peaks around 78-80 GeV for all events (lower than MZ=91.2 GeV due to using only charged tracks with pion mass assumption, missing neutral energy). Tagged events have similar dijet mass distribution. Gluon splitting candidates (m_dijet < 60 GeV) are rare (~1% of events). The hemisphere mass is a more useful discriminant: events with high hemisphere mass (> 3.5 GeV) are strongly correlated with the b-tag, confirming that the secondary vertex mass is the primary b-discriminating variable."
+}

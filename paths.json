@@ -1,0 +1,9 @@
+{
+  "analysis_type": "measurement",
+  "data_dir": "/n/holystore01/LABS/iaifi_lab/Lab/sambt/LEP/ALEPH/",
+  "mc_dir": "/n/holystore01/LABS/iaifi_lab/Lab/sambt/LEP/ALEPHMC/",
+  "allow": [
+    "/n/holystore01/LABS/iaifi_lab/Lab/sambt/LEP/ALEPH/",
+    "/n/holystore01/LABS/iaifi_lab/Lab/sambt/LEP/ALEPHMC/"
+  ]
+}

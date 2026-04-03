@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "rb_3tag_stability_fulldata",
+    "pdf": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/rb_3tag_stability_fulldata.pdf",
+    "png": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/rb_3tag_stability_fulldata.png",
+    "description": "R_b across 8 working point configurations (SF-calibrated, full data)",
+    "observable": "R_b",
+    "phase": "4c",
+    "figsize": [
+      10,
+      10
+    ],
+    "style": "ATLAS"
+  },
+  {
+    "filename": "afb_kappa_fulldata",
+    "pdf": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/afb_kappa_fulldata.pdf",
+    "png": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/afb_kappa_fulldata.png",
+    "description": "A_FB^b across kappa values (full data)",
+    "observable": "A_FB_b",
+    "phase": "4c",
+    "figsize": [
+      10,
+      10
+    ],
+    "style": "ATLAS"
+  },
+  {
+    "filename": "systematics_breakdown_fulldata",
+    "pdf": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/systematics_breakdown_fulldata.pdf",
+    "png": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/systematics_breakdown_fulldata.png",
+    "description": "Systematic uncertainty breakdown for R_b and A_FB^b",
+    "observable": "R_b, A_FB_b",
+    "phase": "4c",
+    "figsize": [
+      10,
+      10
+    ],
+    "style": "ATLAS"
+  },
+  {
+    "filename": "per_year_consistency",
+    "pdf": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/per_year_consistency.pdf",
+    "png": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/per_year_consistency.png",
+    "description": "Per-year R_b and A_FB^b consistency (1992-1995)",
+    "observable": "R_b, A_FB_b",
+    "phase": "4c",
+    "figsize": [
+      10,
+      10
+    ],
+    "style": "ATLAS"
+  },
+  {
+    "filename": "calibration_progression",
+    "pdf": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/calibration_progression.pdf",
+    "png": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/calibration_progression.png",
+    "description": "R_b and A_FB^b progression from MC to 10%% to full data",
+    "observable": "R_b, A_FB_b",
+    "phase": "4c",
+    "figsize": [
+      10,
+      10
+    ],
+    "style": "ATLAS"
+  },
+  {
+    "filename": "bdt_crosscheck_fulldata",
+    "pdf": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/bdt_crosscheck_fulldata.pdf",
+    "png": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/outputs/figures/bdt_crosscheck_fulldata.png",
+    "description": "BDT cross-check R_b vs cut-based (full data)",
+    "observable": "R_b",
+    "phase": "4c",
+    "figsize": [
+      10,
+      10
+    ],
+    "style": "ATLAS"
+  },
+  {
+    "filename": "rb_3tag_stability_fulldata.png",
+    "type": "result",
+    "script": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/src/plot_phase4c.py",
+    "description": "R_b across 8 working point configurations (SF-calibrated, full data)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:33:15.848071+00:00",
+    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "observable_type": "derived"
+  },
+  {
+    "filename": "afb_kappa_fulldata.png",
+    "type": "result",
+    "script": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/src/plot_phase4c.py",
+    "description": "A_FB^b across kappa values, inclusive method (full data)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:33:16.627606+00:00",
+    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "observable_type": "derived"
+  },
+  {
+    "filename": "systematics_breakdown_fulldata.png",
+    "type": "systematic_impact",
+    "script": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/src/plot_phase4c.py",
+    "description": "Systematic uncertainty breakdown for R_b and A_FB^b (full data)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:33:17.085503+00:00",
+    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "observable_type": "derived"
+  },
+  {
+    "filename": "per_year_consistency.png",
+    "type": "result",
+    "script": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/src/plot_phase4c.py",
+    "description": "Per-year R_b and A_FB^b consistency (1992-1995, full data)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:33:17.952450+00:00",
+    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "observable_type": "derived"
+  },
+  {
+    "filename": "calibration_progression.png",
+    "type": "comparison",
+    "script": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/src/plot_phase4c.py",
+    "description": "R_b and A_FB^b progression from MC to 10% to full data",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:33:18.735353+00:00",
+    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "observable_type": "derived"
+  },
+  {
+    "filename": "bdt_crosscheck_fulldata.png",
+    "type": "comparison",
+    "script": "/n/holystore01/LABS/iaifi_lab/Users/anovak/work/slopspec/analyses/Rb_Rc_AFBb/phase4_inference/4c_observed/src/plot_phase4c.py",
+    "description": "BDT cross-check R_b vs cut-based (full data)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:33:19.366314+00:00",
+    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "observable_type": "derived"
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "operating_point_stability": {
+    "chi2": 8.115400772537508e-10,
+    "ndf": 7,
+    "chi2_ndf": 1.1593429675053582e-10,
+    "p_value": 1.0,
+    "passes": true,
+    "n_configs": 8,
+    "method": "3-tag system across 8 threshold configurations (MC expected)"
+  },
+  "operating_point_stability_sf_corrected": {
+    "chi2": 0.3787,
+    "ndf": 14,
+    "chi2_ndf": 0.02705,
+    "p_value": 1.0,
+    "passes": true,
+    "n_configs": 15,
+    "method": "SF-corrected 3-tag R_b stability across 15 threshold configurations, 10% data",
+    "source": "phase4_inference/4b_partial/outputs/d0_smearing_results.json"
+  },
+  "operating_point_stability_fulldata": {
+    "chi2": 5453.73,
+    "ndf": 7,
+    "chi2_ndf": 779.1,
+    "p_value": 0.0,
+    "passes": false,
+    "n_configs": 8,
+    "method": "3-tag R_b stability across 8 configurations, full data",
+    "R_b_combined": 0.190,
+    "sigma_combined": 0.00013,
+    "note": "Poor chi2 driven by WP-dependent systematic not captured by stat-only combination. R_b value is ~12% below SM.",
+    "source": "phase4_inference/4c_observed/outputs/three_tag_rb_fulldata.json"
+  },
+  "kappa_consistency": {
+    "chi2": 5.573295341057624,
+    "ndf": 3,
+    "p_value": 0.13431987951054025,
+    "passes": true,
+    "method": "A_FB^b purity-corrected across kappa (MC expected, Phase 4a)"
+  },
+  "kappa_consistency_fulldata": {
+    "chi2": 11.0,
+    "ndf": 3,
+    "chi2_ndf": 3.67,
+    "p_value": 0.012,
+    "passes": false,
+    "method": "A_FB^b inclusive (slope/delta_b) across 4 kappa values, full data",
+    "A_FB_b_combined": 0.0005,
+    "sigma_combined": 0.0005,
+    "note": "Poor chi2 reflects kappa-dependent charm contamination in inclusive method. Higher kappa gives larger A_FB^b (0.0027 at k=2 vs -0.0017 at k=0.3) because delta_b grows faster than delta_c.",
+    "source": "phase4_inference/4c_observed/outputs/afb_fulldata.json"
+  },
+  "afb_sign_investigation": {
+    "previous_result": -0.076,
+    "previous_method": "purity-corrected at all WPs",
+    "root_cause": "estimate_purity_at_wp had calibration only at WPs 9.0/10.0, returning f_b~0.19 and f_c~0.40 for ALL WPs. The charm correction dominated the small slope.",
+    "corrected_result": 0.0005,
+    "corrected_method": "inclusive slope/delta_b",
+    "corrected_sigma": 0.0005,
+    "sign_now_correct": true,
+    "mc_validation": "MC slopes consistent with zero (A_FB^b ~ -0.02 +/- 0.02 at WP 5.0)"
+  },
+  "independent_closure_3tag": {
+    "passes": true,
+    "per_config": [
+      {
+        "label": "tight=10, loose=5",
+        "R_b": 0.21649870620402223,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.0012116955059225784,
+        "pull": 0.5931409339304351,
+        "passes": true
+      },
+      {
+        "label": "tight=10, loose=3",
+        "R_b": 0.2152646900820679,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.0012600135955624769,
+        "pull": -0.40897171248543046,
+        "passes": true
+      },
+      {
+        "label": "tight=8, loose=4",
+        "R_b": 0.2161726474299214,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.0011689388434793244,
+        "pull": 0.33590074631508726,
+        "passes": true
+      },
+      {
+        "label": "tight=8, loose=3",
+        "R_b": 0.2158457699236832,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.0011639504534739576,
+        "pull": 0.0565057760722614,
+        "passes": true
+      }
+    ]
+  },
+  "precision_comparison": {
+    "R_b_vs_ALEPH": {
+      "our_total": 0.026,
+      "reference_total": 0.0014,
+      "ratio": 18.6,
+      "source": "hep-ex/9609005",
+      "investigation_required": true,
+      "explanation": "Simplified single-tag system (vs ALEPH 5-tag), no per-hemisphere vertex reconstruction, eps_c > eps_b tag inversion, WP-dependent Rb."
+    },
+    "R_b_vs_LEP_combined": {
+      "our_total": 0.026,
+      "reference_total": 0.00066,
+      "ratio": 39.4,
+      "source": "hep-ex/0509008",
+      "investigation_required": true,
+      "explanation": "Simplified single-tag system (vs ALEPH 5-tag), no per-hemisphere vertex reconstruction, eps_c > eps_b tag inversion, WP-dependent Rb."
+    },
+    "A_FB_b_vs_ALEPH": {
+      "our_total": 0.0005,
+      "reference_total": 0.0052,
+      "ratio": 0.096,
+      "source": "inspire_433746",
+      "note": "Our statistical uncertainty is artificially small because the inclusive method neglects charm contamination. The uncertainty is underestimated.",
+      "phase": "4c full data"
+    },
+    "A_FB_b_vs_LEP_combined": {
+      "our_result": 0.0005,
+      "reference_result": 0.0995,
+      "pull": -193.8,
+      "reference_sigma": 0.0017,
+      "note": "Large discrepancy from LEP combined. Our inclusive method underestimates A_FB^b because it does not correct for charm/uds contamination in the tagged sample. The b-purity is only ~20%."
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "negative_d0": {
+    "test": "mirrored_significance_pseudodata",
+    "design": "All positive significances flipped to negative, removing all lifetime information. Hemisphere tags recomputed from mirrored significances.",
+    "N_had": 2887261,
+    "N_t": 0,
+    "N_tt": 0,
+    "f_s": 0.0,
+    "f_d": 0.0,
+    "R_b_extracted": 0.0,
+    "eps_b_extracted": 0.0,
+    "full_sample_f_s": 0.4201606643805323,
+    "full_sample_f_d": 0.20717281880647437,
+    "full_sample_R_b": 0.827431484828888,
+    "f_s_ratio_mirrored_over_full": 0.0,
+    "expected": "f_s(mirrored) << f_s(full) and R_b(mirrored) << R_b(full), since no lifetime signal remains after mirroring",
+    "pass_criterion": "f_s ratio < 0.5 AND R_b(mirrored) < R_b(full)",
+    "passes": true
+  },
+  "bflag_consistency": {
+    "test": "bflag_discrimination_power",
+    "working_point": 5.0,
+    "n_bflag4": 2881742,
+    "n_non_bflag4": 5519,
+    "fraction_bflag4": 0.9980884997927101,
+    "chi2": 80126.9356205251,
+    "ndf": 7,
+    "chi2_ndf": 11446.705088646442,
+    "verdict": "bFlag provides discriminating power (chi2/ndf > 2.0)",
+    "full_sample": {
+      "N_had": 2887261,
+      "R_b": 0.827431484828888
+    },
+    "bflag4_sample": {
+      "N_had": 2881742,
+      "R_b": 0.8290942932753778
+    },
+    "rb_difference": 0.0016628084464898052,
+    "note": "bFlag=4 covers 99.8% of preselected events. Counting-based R_b comparison is tautological due to 99.8% overlap. Shape chi2/ndf comparing bFlag=4 vs bFlag=-1 discriminant distributions is the committed validation test (STRATEGY.md Section 9.6).",
+    "downscope_note": "With only 0.19% of events in the non-bFlag=4 sample, statistical power is limited. Meaningful b-enrichment validation requires self-labelling in Phase 4.",
+    "passes": true
+  },
+  "contamination_injection": {
+    "test": "contamination_injection",
+    "contamination_fraction": 0.05,
+    "working_point": 5.0,
+    "baseline_R_b": 0.827431484828888,
+    "contaminated_R_b": 0.7832931810947122,
+    "predicted_shift": -0.020577373590233837,
+    "observed_shift": -0.04413830373417571,
+    "ratio": 2.144992097296812,
+    "pass_criterion": "Shifts in same direction (ratio > 0). Ratio magnitude reported as open finding for Phase 4.",
+    "ratio_note": "The 2.14x discrepancy between predicted and observed shift is attributed to the simplified analytical prediction not capturing the non-linear response of the double-tag formula to contamination injection. With uncalibrated background efficiencies (eps_c=0.05, eps_uds=0.005), the formula amplifies the contamination effect. Phase 4 must re-evaluate this ratio after background efficiency calibration.",
+    "passes": true
+  },
+  "overall_passes": true
+}

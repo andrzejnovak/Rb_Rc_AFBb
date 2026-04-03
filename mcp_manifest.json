@@ -1,0 +1,36 @@
+{
+  "servers": {
+    "alphaxiv": {
+      "description": "arXiv literature search \u2014 semantic search, full-text search, paper Q&A, code repo access",
+      "tools": [
+        "embedding_similarity_search",
+        "full_text_papers_search",
+        "get_paper_content",
+        "answer_pdf_queries",
+        "read_files_from_github_repository"
+      ],
+      "verify_tool": "full_text_papers_search",
+      "verify_query": {
+        "query": "Z boson cross section measurement"
+      },
+      "toggle": "MCP_ALPHAXIV",
+      "auth": "OAuth 2.0 \u2014 run: claude mcp add --transport http alphaxiv https://api.alphaxiv.org/mcp/v1",
+      "fallback": "Use WebSearch with INSPIRE (inspirehep.net/api) or direct arXiv queries."
+    },
+    "lep-corpus": {
+      "description": "LEP experiment corpus \u2014 literature search and cross-experiment comparisons",
+      "tools": [
+        "search_lep_corpus",
+        "compare_measurements",
+        "get_paper",
+        "list_corpus_papers"
+      ],
+      "verify_tool": "search_lep_corpus",
+      "verify_query": {
+        "query": "Z boson"
+      },
+      "toggle": "MCP_LEP_CORPUS",
+      "fallback": "Use WebSearch/WebFetch for literature queries. Cross-experiment comparisons unavailable."
+    }
+  }
+}

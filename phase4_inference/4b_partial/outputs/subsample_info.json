@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "fraction": 0.1,
+  "n_selected": 288627,
+  "n_total": 2887261,
+  "actual_fraction": 0.09996567681273012,
+  "method": "Random selection with np.random.RandomState(42).random(n) < 0.10"
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "filename": "data_mc_nch_fabiola_b942.png",
+    "type": "data_mc",
+    "script": "src/survey_variables.py",
+    "description": "Charged hadron multiplicity, data vs MC after hadronic selection",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-02T15:58:45.738746+00:00",
+    "script_mtime": "2026-04-02T15:57:59+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "data_mc_thrust_fabiola_b942.png",
+    "type": "data_mc",
+    "script": "src/survey_variables.py",
+    "description": "Thrust distribution, data vs MC after hadronic selection",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-02T15:59:23.481947+00:00",
+    "script_mtime": "2026-04-02T15:57:59+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "data_mc_d0_fabiola_b942.png",
+    "type": "data_mc",
+    "script": "src/survey_variables.py",
+    "description": "Track impact parameter d0, data vs MC (sentinel -999 removed)",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-02T16:00:01.930034+00:00",
+    "script_mtime": "2026-04-02T15:57:59+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "data_mc_absd0_fabiola_b942.png",
+    "type": "data_mc",
+    "script": "src/survey_variables.py",
+    "description": "|d0| distribution (log scale), data vs MC - key b-tagging variable",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-02T16:00:40.021865+00:00",
+    "script_mtime": "2026-04-02T15:57:59+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "data_mc_sphericity_fabiola_b942.png",
+    "type": "data_mc",
+    "script": "src/survey_variables.py",
+    "description": "Sphericity distribution, data vs MC after hadronic selection",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-02T16:01:17.977358+00:00",
+    "script_mtime": "2026-04-02T15:57:59+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "data_mc_costheta_fabiola_b942.png",
+    "type": "data_mc",
+    "script": "src/survey_variables.py",
+    "description": "cos(theta_thrust) distribution for A_FB measurement, data vs MC",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-02T16:01:55.696752+00:00",
+    "script_mtime": "2026-04-02T15:57:59+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "data_mc_trackpt_fabiola_b942.png",
+    "type": "data_mc",
+    "script": "src/survey_variables.py",
+    "description": "Track pT distribution, data vs MC",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-02T16:02:33.258348+00:00",
+    "script_mtime": "2026-04-02T15:57:59+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "data_mc_trackweight_fabiola_b942.png",
+    "type": "data_mc",
+    "script": "src/survey_variables.py",
+    "description": "Per-track weight distribution, data vs MC",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-02T16:03:11.135927+00:00",
+    "script_mtime": "2026-04-02T15:57:59+00:00",
+    "observable_type": "count"
+  }
+]

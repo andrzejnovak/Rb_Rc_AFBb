@@ -1,0 +1,43 @@
+{
+  "d0_reference": {
+    "data": {
+      "mean_d0_cm": -0.00016495061572641134,
+      "median_d0_cm": 0.0,
+      "std_d0_cm": 0.23119258880615234,
+      "per_event_median_mean": 2.6996609357211435e-05,
+      "per_event_median_spread": 0.007090044224329736,
+      "n_events_checked": 50000,
+      "d0_width_low_p_std": 0.3246588408946991,
+      "d0_width_low_p_mad": 0.03706499934196472
+    },
+    "mc": {
+      "mean_d0_cm": 0.00028941448545083404,
+      "median_d0_cm": 0.0,
+      "std_d0_cm": 0.2255125790834427,
+      "per_event_median_mean": -5.007886376280386e-08,
+      "per_event_median_spread": 0.0070124746521332245,
+      "n_events_checked": 50000,
+      "d0_width_low_p_std": 0.32226505875587463,
+      "d0_width_low_p_mad": 0.03706499934196472
+    }
+  },
+  "vertex_bias": {
+    "calibrated_neg_width_data": 12.82988166809082,
+    "calibrated_neg_width_mc": 12.662186622619629,
+    "mean_scale_factor_data": 3.0165232598781584,
+    "mean_scale_factor_mc": 2.748745882511139,
+    "data_mc_scale_ratio": 1.097418018548295,
+    "vertex_bias_fraction_estimate": 0.08877020141984102
+  },
+  "conclusion": {
+    "vertex_type": "Per-event vertex or beam spot convolution",
+    "vertex_note": "Per-event median d0 spread = 70.9 micron suggests d0 includes beam spot / vertex effects.",
+    "infeasible_approaches": [
+      "Vertex refit excluding track: no vertex reconstruction code available in open data format. The d0 branch is pre-computed and cannot be recomputed from (vx, vy) since no per-event vertex position is stored."
+    ],
+    "systematic_recommendation": "The data/MC scale factor ratio is 1.10. The sigma_d0 calibration absorbs beam spot and vertex effects into the per-bin scale factors. A systematic uncertainty should be assigned by varying scale factors by +/- 10% to cover residual vertex-related biases. This systematic enters through the hemisphere tag efficiency and the correlation C_b.",
+    "approaches_attempted": 3,
+    "approaches_feasible": 2,
+    "approaches_infeasible": 1
+  }
+}

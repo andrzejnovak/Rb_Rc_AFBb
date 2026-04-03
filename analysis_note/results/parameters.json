@@ -1,0 +1,239 @@
+{
+  "R_b": {
+    "value": 0.21578001028371308,
+    "stat": 0.0002649384172009339,
+    "syst": 0.06529879851715782,
+    "total": 0.06529933598551582,
+    "SM": 0.21578,
+    "unit": "dimensionless",
+    "method": "3-tag system (tight/loose/anti-b), MC pseudo-data",
+    "n_configs": 8,
+    "stability_chi2_ndf": 1.1593429675053582e-10,
+    "stability_p_value": 1.0
+  },
+  "A_FB_b": {
+    "value": -9.842212181052319e-05,
+    "stat": 0.0051890120160684675,
+    "syst": 0.012174092114641622,
+    "total": 0.01323383408233163,
+    "SM": 0.1032,
+    "unit": "dimensionless",
+    "method": "Purity-corrected extraction with published delta_b, MC pseudo-data",
+    "note": "On symmetric MC, A_FB^b = 0 by construction. Non-zero values reflect noise."
+  },
+  "A_FB_0_b": {
+    "value": -0.00010216122255607555,
+    "stat": 0.005386144920145804,
+    "syst": 0.012636591358357506,
+    "SM": 0.1032,
+    "unit": "dimensionless",
+    "method": "Pole asymmetry from A_FB^b / (1 - delta_QCD - delta_QED)"
+  },
+  "sin2theta_eff": {
+    "value": 0.25001844603814455,
+    "stat": 0.000972543817307811,
+    "syst": null,
+    "SM": 0.23153,
+    "unit": "dimensionless",
+    "method": "Inverted from A_FB^{0,b} via SM formula"
+  },
+  "R_c": {
+    "value": 0.17223,
+    "stat": null,
+    "syst": 0.003,
+    "total": 0.003,
+    "SM": 0.17223,
+    "unit": "dimensionless",
+    "method": "Constrained to SM value [D6]; uncertainty from LEP combined"
+  },
+  "phase": "4a_expected_regression",
+  "data_type": "MC pseudo-data only",
+  "regression_note": "Rewritten per REGRESS(4a). Primary methods: 3-tag R_b, purity-corrected A_FB^b, eps_uds from anti-tag, eps_c from 3-tag.",
+  "R_b_10pct_3tag": {
+    "value": 0.16327159854396087,
+    "stat": 0.001117945551774994,
+    "SM": 0.21578,
+    "working_point": "tight=10, loose=5",
+    "method": "3-tag system (tight/loose/anti-b), 10% data",
+    "subsample_seed": 42,
+    "subsample_fraction": 0.1,
+    "n_events": 288627,
+    "syst": 0.014950692183304174,
+    "total": 0.014956384201836112
+  },
+  "R_b_10pct_3tag_combined": {
+    "value": 0.16984976697145251,
+    "stat": 0.00041259136324005074,
+    "SM": 0.21578,
+    "method": "3-tag combined across WPs, 10% data",
+    "n_configs": 8,
+    "stability_chi2_ndf": 55.54941080985365,
+    "stability_p": 0.0,
+    "syst": 0.014950692183304174,
+    "total": 0.014956384201836112
+  },
+  "A_FB_b_10pct": {
+    "value": -0.027338898448293465,
+    "stat": 0.008383539716223472,
+    "SM": 0.1032,
+    "LEP_observed": 0.0995,
+    "method": "Purity-corrected, published delta_b, afb_c=0.0682, 10% data",
+    "subsample_seed": 42,
+    "subsample_fraction": 0.1,
+    "n_events": 288627,
+    "afb_c_used": 0.0682,
+    "syst": 0.02386394081861357,
+    "total": 0.02529370296274919
+  },
+  "A_FB_0_b_10pct": {
+    "value": -0.028377515516185867,
+    "stat": 0.008702034166725629,
+    "SM": 0.1032
+  },
+  "sin2theta_eff_10pct": {
+    "value": 0.25514656222023663,
+    "stat": 0.0015861196203588168,
+    "SM": 0.23153
+  },
+  "R_b_10pct_3tag_smeared": {
+    "value": 0.19701586431182022,
+    "stat": 0.0011272600266028113,
+    "SM": 0.21578,
+    "method": "3-tag smeared MC efficiencies, 10% data",
+    "working_point": "tight=10, loose=5"
+  },
+  "R_b_10pct_3tag_smeared_combined": {
+    "value": 0.19890794005071,
+    "stat": 0.0003368420167480785,
+    "SM": 0.21578,
+    "method": "3-tag smeared MC combined, 10% data"
+  },
+  "R_b_10pct_3tag_sf": {
+    "value": 0.21215693120884146,
+    "stat": 0.0011362194648926766,
+    "SM": 0.21578,
+    "method": "3-tag SF-corrected efficiencies, 10% data",
+    "working_point": "tight=10, loose=5"
+  },
+  "R_b_10pct_sf_stability": {
+    "chi2": 0.3787,
+    "ndf": 14,
+    "p_value": 1.0,
+    "n_configs": 15,
+    "method": "SF-corrected 3-tag R_b stability across 15 threshold configurations, 10% data",
+    "source": "phase4_inference/4b_partial/outputs/d0_smearing_results.json, field step5_scale_factor_extraction.stability"
+  },
+  "A_FB_b_10pct_purity_corrected": {
+    "value": 0.07366,
+    "stat": 0.03088,
+    "method": "Purity-corrected extraction with published delta_b, kappa=2.0, threshold=2.0, 10% data",
+    "note": "Pre-charm-correction value at loosest WP. This is the primary quoted A_FB^b in the AN.",
+    "source": "phase4_inference/4b_partial/outputs/delta_b_calibration.json, field kappa_results.k2.0.extraction_results[0].afb_purity_corrected"
+  },
+  "R_b_10pct_bdt_sf": {
+    "value": 0.21700268131666386,
+    "stat": 6.582022963502319e-05,
+    "SM": 0.21578,
+    "method": "BDT 3-tag SF-corrected, combined across WPs, 10% data",
+    "n_configs": 13,
+    "stability_chi2_ndf": 0.08920001180811887,
+    "stability_p": 0.9999793217149581
+  },
+  "R_b_10pct_bdt_sf_best": {
+    "value": 0.21694365702375293,
+    "stat": 0.00023405174663350785,
+    "SM": 0.21578,
+    "method": "BDT 3-tag SF-corrected, best single WP, 10% data",
+    "working_point": "tight=0.8, loose=0.6"
+  },
+  "R_b_fulldata_3tag": {
+    "value": 0.18778339827098536,
+    "stat": 0.0003648885340196339,
+    "SM": 0.21578,
+    "working_point": "tight=8, loose=4",
+    "method": "3-tag system (SF-calibrated), full data",
+    "n_events": 2887261
+  },
+  "R_b_fulldata_3tag_combined": {
+    "value": 0.1898179039314112,
+    "stat": 0.0001341653434616475,
+    "SM": 0.21578,
+    "method": "3-tag combined across WPs (SF-calibrated), full data",
+    "n_configs": 8,
+    "stability_chi2_ndf": 779.1040059253958,
+    "stability_p": 0.0
+  },
+  "A_FB_b_fulldata": {
+    "value": 0.0004756211904242225,
+    "stat": 0.0005109782096036738,
+    "SM": 0.1032,
+    "LEP_observed": 0.0995,
+    "method": "Inclusive slope/delta_b, full data",
+    "n_events": 2887261
+  },
+  "A_FB_0_b_fulldata": {
+    "value": 0.002629012955220763,
+    "stat": 0.0027410004611770947,
+    "SM": 0.1032
+  },
+  "R_b_fulldata_final": {
+    "value": 0.2122606431942808,
+    "stat": 0.0003582345120638675,
+    "syst": 0.026947961183116202,
+    "total": 0.026950342185070142,
+    "SM": 0.21578,
+    "method": "3-tag SF-calibrated, C_b=1.0, full ALEPH 1992-1995 data (CORRECTED)"
+  },
+  "A_FB_b_fulldata_final": {
+    "value": 0.0025327910810596832,
+    "stat": 0.002640679844298013,
+    "syst": 0.0021186333312630382,
+    "total": 0.0033855276150727967,
+    "SM": 0.1032,
+    "LEP_observed": 0.0995,
+    "method": "Purity-corrected (no charm), full ALEPH 1992-1995 data (CORRECTED)"
+  },
+  "sin2theta_eff_fulldata": {
+    "value": 0.24952548836365718,
+    "stat": 0.0004945502397243201,
+    "SM": 0.23153
+  },
+  "R_b_fulldata_corrected": {
+    "value": 0.2122606431942808,
+    "stat": 0.0003582345120638675,
+    "syst": 0.026947961183116202,
+    "total": 0.026950342185070142,
+    "SM": 0.21578,
+    "working_point": "tight=8, loose=4",
+    "method": "3-tag SF-calibrated, C_b=1.0, full data (CORRECTED)",
+    "n_events": 2887261,
+    "C_b_used": 1.0
+  },
+  "R_b_fulldata_corrected_combined": {
+    "value": 0.21235752629315852,
+    "stat": 9.783223135920731e-05,
+    "syst": 0.026947961183116202,
+    "total": 0.02694813876823834,
+    "SM": 0.21578,
+    "method": "3-tag SF-calibrated combined, C_b=1.0, full data (CORRECTED)",
+    "n_configs": 15
+  },
+  "A_FB_b_fulldata_corrected": {
+    "value": 0.0025327910810596832,
+    "stat": 0.002640679844298013,
+    "syst": 0.0021186333312630382,
+    "total": 0.0033855276150727967,
+    "SM": 0.1032,
+    "LEP_observed": 0.0995,
+    "method": "Purity-corrected (no charm), full data (CORRECTED)",
+    "n_events": 2887261
+  },
+  "A_FB_b_fulldata_inclusive_crosscheck": {
+    "value": 0.0004756211904242225,
+    "stat": 0.0005109782096036738,
+    "SM": 0.1032,
+    "LEP_observed": 0.0995,
+    "method": "Inclusive (slope / delta_b), full data \u2014 cross-check only",
+    "n_events": 2887261
+  }
+}

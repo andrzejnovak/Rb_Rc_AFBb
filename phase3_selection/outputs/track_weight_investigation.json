@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "data_good_tracks": {
+      "n": 46731904,
+      "mean": 1.0226460695266724,
+      "std": 0.044020578265190125,
+      "min": 0.02800000086426735,
+      "max": 9.0
+    },
+    "data_all_tracks": {
+      "n": 85198110,
+      "mean": 1.0228825807571411,
+      "std": 0.0421857014298439,
+      "min": 0.02800000086426735,
+      "max": 9.0
+    },
+    "mc_good_tracks": {
+      "n": 11911154,
+      "mean": 1.0222113132476807,
+      "std": 0.042366303503513336,
+      "min": 0.02800000086426735,
+      "max": 9.0
+    },
+    "mc_all_tracks": {
+      "n": 21700304,
+      "mean": 1.0226202011108398,
+      "std": 0.04080239310860634,
+      "min": 0.02800000086426735,
+      "max": 9.0
+    }
+  },
+  "jet_charge_impact": {
+    "kappa_0.3": {
+      "mean_qfb_unweighted": -0.003905784636000451,
+      "mean_qfb_weighted": -0.003909763350447538,
+      "difference": -3.978714447087396e-06,
+      "relative_difference_pct": -0.10186722561235802
+    },
+    "kappa_0.5": {
+      "mean_qfb_unweighted": -0.005196674209352453,
+      "mean_qfb_weighted": -0.005214182723799289,
+      "difference": -1.7508514446836106e-05,
+      "relative_difference_pct": -0.33691768507107944
+    },
+    "kappa_1.0": {
+      "mean_qfb_unweighted": -0.008237817148004985,
+      "mean_qfb_weighted": -0.008277250689133854,
+      "difference": -3.943354112886932e-05,
+      "relative_difference_pct": -0.4786892015249361
+    },
+    "kappa_2.0": {
+      "mean_qfb_unweighted": -0.011768615725660478,
+      "mean_qfb_weighted": -0.011793753774394209,
+      "difference": -2.513804873373153e-05,
+      "relative_difference_pct": -0.21360242631527282
+    }
+  },
+  "tag_rate_impact": {
+    "working_point": 5.0,
+    "f_s_h0_unweighted": 0.4150092423234339,
+    "f_s_h0_weighted": 0.42666042314844416,
+    "relative_difference_pct": 2.807450928027771,
+    "correlation": 0.9990401831940261
+  },
+  "conclusion": "MINOR IMPACT: Track weights change Q_FB by at most 0.5% and tag rates by 2.8%. Weights have mean ~1.0 and primarily affect low-weight tracks. Impact is within systematic uncertainties. Document as systematic for Phase 4.",
+  "recommendation": "The weight branch (range [0.03, 9.0], mean ~1.02) represents per-track reconstruction weights. The impact on Q_FB and tag rates is quantified above. Phase 4 should: (1) apply weights in the nominal analysis, (2) compare weighted vs unweighted as a systematic."
+}

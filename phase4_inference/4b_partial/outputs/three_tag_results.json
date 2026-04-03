@@ -1,0 +1,232 @@
+{
+  "description": "3-tag system investigation: tight (b-enriched), loose (b+c), anti (uds-enriched). Provides additional constraints on R_b, eps_c, eps_uds compared to the 2-tag (single/double) system.",
+  "scan_results": [
+    {
+      "label": "tight=10, loose=5",
+      "thr_tight": 10.0,
+      "thr_loose": 5.0,
+      "mc_counts": {
+        "n_total": 730365,
+        "n_tight": 224818,
+        "n_loose": 242668,
+        "n_anti": 262879,
+        "f_tight": 0.30781595503618053,
+        "f_loose": 0.33225578991326254,
+        "f_anti": 0.3599282550505569,
+        "f_s_tight": 0.17835808123335592,
+        "f_s_loose": 0.24961971069259892,
+        "f_s_anti": 0.5720222080740451,
+        "f_d_tt": 0.04890020743053131,
+        "f_d_ll": 0.06519616903876829,
+        "f_d_aa": 0.3599282550505569,
+        "f_d_tl": 0.10178746243316698,
+        "f_d_ta": 0.15712828517248226,
+        "f_d_la": 0.26705962087449425
+      },
+      "data_counts": {
+        "n_total": 288627,
+        "n_tight": 86096,
+        "n_loose": 95954,
+        "n_anti": 106577,
+        "f_tight": 0.2982950313033777,
+        "f_loose": 0.3324498401050491,
+        "f_anti": 0.3692551285915732,
+        "f_s_tight": 0.17150162666694385,
+        "f_s_loose": 0.24744739750612382,
+        "f_s_anti": 0.5810509758269323,
+        "f_d_tt": 0.04470822203050997,
+        "f_d_ll": 0.0654096810069744,
+        "f_d_aa": 0.3692551285915732,
+        "f_d_tl": 0.09703527390022416,
+        "f_d_ta": 0.15655153537264357,
+        "f_d_la": 0.26704015909807466
+      },
+      "fit": {
+        "R_b_fit": 0.22127900976437756,
+        "chi2_min": 185.19583290790263
+      }
+    },
+    {
+      "label": "tight=10, loose=3",
+      "thr_tight": 10.0,
+      "thr_loose": 3.0,
+      "mc_counts": {
+        "n_total": 730365,
+        "n_tight": 224818,
+        "n_loose": 381963,
+        "n_anti": 123584,
+        "f_tight": 0.30781595503618053,
+        "f_loose": 0.5229754985520938,
+        "f_anti": 0.16920854641172564,
+        "f_s_tight": 0.17835808123335592,
+        "f_s_loose": 0.444203925434543,
+        "f_s_anti": 0.3774379933321011,
+        "f_d_tt": 0.04890020743053131,
+        "f_d_ll": 0.20045456723692948,
+        "f_d_aa": 0.16920854641172564,
+        "f_d_tl": 0.16497778508006272,
+        "f_d_ta": 0.09393796252558652,
+        "f_d_la": 0.32252093131516435
+      },
+      "data_counts": {
+        "n_total": 288627,
+        "n_tight": 86096,
+        "n_loose": 151901,
+        "n_anti": 50630,
+        "f_tight": 0.2982950313033777,
+        "f_loose": 0.5262882543906149,
+        "f_anti": 0.17541671430600742,
+        "f_s_tight": 0.17150162666694385,
+        "f_s_loose": 0.4428605085456316,
+        "f_s_anti": 0.3856378647874246,
+        "f_d_tt": 0.04470822203050997,
+        "f_d_ll": 0.20006444303547485,
+        "f_d_aa": 0.17541671430600742,
+        "f_d_tl": 0.1593683196651734,
+        "f_d_ta": 0.09421848960769436,
+        "f_d_la": 0.32622381135514
+      },
+      "fit": {
+        "R_b_fit": 0.21713317083426065,
+        "chi2_min": 178.7793750363126
+      }
+    },
+    {
+      "label": "tight=8, loose=4",
+      "thr_tight": 8.0,
+      "thr_loose": 4.0,
+      "mc_counts": {
+        "n_total": 730365,
+        "n_tight": 300476,
+        "n_loose": 236470,
+        "n_anti": 193419,
+        "f_tight": 0.4114052562759716,
+        "f_loose": 0.3237696220382959,
+        "f_anti": 0.26482512168573247,
+        "f_s_tight": 0.24879888822711932,
+        "f_s_loose": 0.26852121884263347,
+        "f_s_anti": 0.4826798929302472,
+        "f_d_tt": 0.08619252017826703,
+        "f_d_ll": 0.07338796355247033,
+        "f_d_aa": 0.26482512168573247,
+        "f_d_tl": 0.1398848520945007,
+        "f_d_ta": 0.18532788400320388,
+        "f_d_la": 0.25038165848582555
+      },
+      "data_counts": {
+        "n_total": 288627,
+        "n_tight": 116230,
+        "n_loose": 93666,
+        "n_anti": 78731,
+        "f_tight": 0.40269967813129054,
+        "f_loose": 0.324522653805777,
+        "f_anti": 0.2727776680629324,
+        "f_s_tight": 0.24147948736604682,
+        "f_s_loose": 0.26675259071396645,
+        "f_s_anti": 0.4917679219199867,
+        "f_d_tt": 0.08025929660080311,
+        "f_d_ll": 0.07277905393466308,
+        "f_d_aa": 0.2727776680629324,
+        "f_d_tl": 0.13620347368749286,
+        "f_d_ta": 0.1862369078429946,
+        "f_d_la": 0.25174359987111394
+      },
+      "fit": {
+        "R_b_fit": 0.2191910509729236,
+        "chi2_min": 179.6863125015662
+      }
+    },
+    {
+      "label": "tight=12, loose=6",
+      "thr_tight": 12.0,
+      "thr_loose": 6.0,
+      "mc_counts": {
+        "n_total": 730365,
+        "n_tight": 167167,
+        "n_loose": 236857,
+        "n_anti": 326341,
+        "f_tight": 0.22888144968611585,
+        "f_loose": 0.32429949408857217,
+        "f_anti": 0.446819056225312,
+        "f_s_tight": 0.12818111492199105,
+        "f_s_loose": 0.2268283666385985,
+        "f_s_anti": 0.6449905184394105,
+        "f_d_tt": 0.027480780157866272,
+        "f_d_ll": 0.05728231774523697,
+        "f_d_aa": 0.446819056225312,
+        "f_d_tl": 0.0720749214433879,
+        "f_d_ta": 0.1293257480848617,
+        "f_d_la": 0.26701717634333516
+      },
+      "data_counts": {
+        "n_total": 288627,
+        "n_tight": 63123,
+        "n_loose": 93699,
+        "n_anti": 131805,
+        "f_tight": 0.21870095313328275,
+        "f_loose": 0.32463698822355497,
+        "f_anti": 0.4566620586431623,
+        "f_s_tight": 0.12140582828356321,
+        "f_s_loose": 0.2247242981425854,
+        "f_s_anti": 0.6538698735738514,
+        "f_d_tt": 0.02411070343384368,
+        "f_d_ll": 0.05670987121786943,
+        "f_d_aa": 0.4566620586431623,
+        "f_d_tl": 0.06810173684374643,
+        "f_d_ta": 0.12648851285569265,
+        "f_d_la": 0.26792711700568556
+      },
+      "fit": {
+        "R_b_fit": 0.22258296456865476,
+        "chi2_min": 205.84345710701507
+      }
+    },
+    {
+      "label": "tight=7, loose=3",
+      "thr_tight": 7.0,
+      "thr_loose": 3.0,
+      "mc_counts": {
+        "n_total": 730365,
+        "n_tight": 348182,
+        "n_loose": 258599,
+        "n_anti": 123584,
+        "f_tight": 0.4767232821945192,
+        "f_loose": 0.3540681713937552,
+        "f_anti": 0.16920854641172564,
+        "f_s_tight": 0.2960875726520302,
+        "f_s_loose": 0.3264744340158688,
+        "f_s_anti": 0.3774379933321011,
+        "f_d_tt": 0.11545186310954111,
+        "f_d_ll": 0.10792275095329047,
+        "f_d_aa": 0.16920854641172564,
+        "f_d_tl": 0.1909579456846919,
+        "f_d_ta": 0.17031347340028616,
+        "f_d_la": 0.2461454204404647
+      },
+      "data_counts": {
+        "n_total": 288627,
+        "n_tight": 134884,
+        "n_loose": 103113,
+        "n_anti": 50630,
+        "f_tight": 0.4673298062897788,
+        "f_loose": 0.35725347940421376,
+        "f_anti": 0.17541671430600742,
+        "f_s_tight": 0.2881054094038326,
+        "f_s_loose": 0.32625672580874276,
+        "f_s_anti": 0.3856378647874246,
+        "f_d_tt": 0.10888101251788641,
+        "f_d_ll": 0.10797326653431592,
+        "f_d_aa": 0.17541671430600742,
+        "f_d_tl": 0.1872867056789559,
+        "f_d_ta": 0.17116208809293657,
+        "f_d_la": 0.24928021286989782
+      },
+      "fit": {
+        "R_b_fit": 0.21664718771168062,
+        "chi2_min": 171.35442683350755
+      }
+    }
+  ],
+  "finding_3tag": "The 3-tag system works in principle: the anti-tag is strongly uds-enriched (65-82% of events depending on threshold). However, the limited b/c discrimination in our tag means the tight tag still has only ~18% b-purity. The anti-tag provides useful constraints on eps_uds but the sensitivity to R_b is modest because eps_b - eps_uds is small in our tag.",
+  "finding_eps_uds": "The anti-tag fraction in data is consistent with MC to within 1-2%. This provides a direct constraint on eps_uds that was previously unconstrained (~100% uncertainty). The constraint comes from the anti-tag purity being dominated by uds events."
+}

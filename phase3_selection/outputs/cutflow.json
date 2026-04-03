@@ -1,0 +1,16 @@
+{
+  "data": {
+    "total": 3050610,
+    "passesAll": 2889543,
+    "cos_theta_cut": 2887261,
+    "total_tracks": 85198110,
+    "good_tracks": 46731904
+  },
+  "mc": {
+    "total": 771597,
+    "passesAll": 731006,
+    "cos_theta_cut": 730365,
+    "total_tracks": 21700304,
+    "good_tracks": 11911154
+  }
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "filename": "efficiency_calibration.png",
+    "type": "diagnostic",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "MC-derived tagging efficiencies vs working point",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T07:16:43.038868+00:00",
+    "script_mtime": "2026-04-03T06:20:59+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "three_tag_rb_stability.png",
+    "type": "validation",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a_v2.py",
+    "description": "R_b operating point stability across 3-tag threshold configurations",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T13:42:17.414511+00:00",
+    "script_mtime": "2026-04-03T13:35:48+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "three_tag_closure.png",
+    "type": "validation",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a_v2.py",
+    "description": "Independent closure test pulls for 3-tag R_b extraction",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T13:42:55.214336+00:00",
+    "script_mtime": "2026-04-03T13:35:48+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "rb_systematic_breakdown.png",
+    "type": "result",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a_v2.py",
+    "description": "Systematic uncertainty breakdown for R_b",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T13:43:33.235475+00:00",
+    "script_mtime": "2026-04-03T13:35:48+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "afb_kappa_results.png",
+    "type": "result",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a_v2.py",
+    "description": "Purity-corrected A_FB^b per kappa on MC pseudo-data",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T13:44:11.158756+00:00",
+    "script_mtime": "2026-04-03T13:35:48+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "afb_angular_distribution.png",
+    "type": "result",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a_v2.py",
+    "description": "Angular distribution of Q_FB vs cos(theta) at kappa=2.0",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T13:44:47.416401+00:00",
+    "script_mtime": "2026-04-03T13:35:48+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "three_tag_efficiency_pattern.png",
+    "type": "supporting",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a_v2.py",
+    "description": "Per-flavour efficiencies in the 3-tag system",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T13:45:23.961871+00:00",
+    "script_mtime": "2026-04-03T13:35:48+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "afb_systematic_breakdown.png",
+    "type": "result",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a_v2.py",
+    "description": "Systematic uncertainty breakdown for A_FB^b",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T13:46:01.809440+00:00",
+    "script_mtime": "2026-04-03T13:35:48+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F1_rb_stability_scan.png",
+    "type": "result",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "R_b extraction at reference working point (WP 10.0). Other WPs yield null extraction due to underdetermined calibration. ALEPH and LEP combined bands shown for reference.",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:34:16.081426+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F2_afb_angular_distribution.png",
+    "type": "result",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "A_FB^b angular distribution: <Q_FB> vs cos(theta)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:34:53.101502+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F4_fd_vs_fs.png",
+    "type": "result",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "Double-tag vs single-tag fraction with R_b prediction curves. Data points trace varying-efficiency locus; curves use fixed WP 10 efficiencies.",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:35:29.652179+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F5_systematic_breakdown.png",
+    "type": "systematic_impact",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "R_b systematic uncertainty breakdown",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:36:07.613726+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F7_afb_kappa_consistency.png",
+    "type": "result",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "A_FB^b kappa consistency across five kappa values",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:36:45.851956+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "closure_test_phase4a.png",
+    "type": "closure",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "Phase 4a closure tests: independent closure and sensitivity validation",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:37:23.100409+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "efficiency_calibration_eps_b.png",
+    "type": "diagnostic",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "MC-derived b-tagging efficiency vs working point",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:38:00.484809+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "efficiency_calibration_eps_c.png",
+    "type": "diagnostic",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "MC-derived charm tagging efficiency vs working point",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:38:37.125943+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "efficiency_calibration_eps_uds.png",
+    "type": "diagnostic",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "MC-derived light-flavour mistag rate vs working point",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:39:15.399184+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "hemisphere_correlation.png",
+    "type": "diagnostic",
+    "script": "phase4_inference/4a_expected/src/plot_phase4a.py",
+    "description": "Hemisphere correlation C vs working point (MC and data)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:39:52.705107+00:00",
+    "script_mtime": "2026-04-03T19:17:46+00:00",
+    "observable_type": "count"
+  }
+]

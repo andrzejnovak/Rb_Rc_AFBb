@@ -1,0 +1,160 @@
+{
+  "independent_closure": {
+    "description": "Extract R_b from validation MC using derivation-derived efficiencies",
+    "requirement": "Pull < 2 sigma (conventions/extraction.md)",
+    "per_wp": [
+      {
+        "R_b_extracted": 0.02022155833470277,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.004639588165559392,
+        "pull": -42.14995699768514,
+        "passes": false,
+        "N_had": 292146,
+        "N_tt": 18974,
+        "f_s": 0.2100816030340994,
+        "f_d": 0.06494697856551176,
+        "n_valid_toys": 500,
+        "threshold": 9.0
+      }
+    ],
+    "overall_passes": false
+  },
+  "corrupted_corrections": {
+    "description": "Intentionally corrupt corrections by +/-20% and verify closure test FAILS (validates sensitivity)",
+    "requirement": "At least 4/6 tests must show pull > 2 (fail closure)",
+    "results": [
+      {
+        "corruption": "+20% eps_c",
+        "factor": 1.2,
+        "R_b_extracted": null,
+        "pull": null,
+        "closure_passes": false,
+        "sensitivity_validated": true
+      },
+      {
+        "corruption": "-20% eps_c",
+        "factor": 0.8,
+        "R_b_extracted": 0.04693757058351831,
+        "pull": -47.155197238603705,
+        "closure_passes": false,
+        "sensitivity_validated": true
+      },
+      {
+        "corruption": "+20% eps_uds",
+        "factor": 1.2,
+        "R_b_extracted": 0.04872892482327242,
+        "pull": -32.82466665607136,
+        "closure_passes": false,
+        "sensitivity_validated": true
+      },
+      {
+        "corruption": "-20% eps_uds",
+        "factor": 0.8,
+        "R_b_extracted": 0.23157223689958903,
+        "pull": 0.3883514690865263,
+        "closure_passes": true,
+        "sensitivity_validated": false
+      },
+      {
+        "corruption": "+20% C_b - 1",
+        "factor": null,
+        "R_b_extracted": 0.012356294364310672,
+        "pull": -60.745261155691935,
+        "closure_passes": false,
+        "sensitivity_validated": true
+      },
+      {
+        "corruption": "-20% C_b - 1",
+        "factor": null,
+        "R_b_extracted": 0.011255982709118106,
+        "pull": -69.20663305399066,
+        "closure_passes": false,
+        "sensitivity_validated": true
+      }
+    ],
+    "n_sensitive": 5,
+    "n_total": 6,
+    "overall_passes": true
+  },
+  "stress_tests": {
+    "description": "Extreme parameter variations to test extraction robustness",
+    "results": [
+      {
+        "test": "R_c=0.14",
+        "R_b_extracted": 0.04932067367620814,
+        "pull": -29.337481740619452
+      },
+      {
+        "test": "R_c=0.2",
+        "R_b_extracted": 0.008676539326011218,
+        "pull": -1.336465974313974
+      },
+      {
+        "test": "C_b=1.05",
+        "R_b_extracted": 0.009935688134595312,
+        "pull": -79.73020677751238
+      }
+    ]
+  },
+  "per_year_consistency": {
+    "description": "Split MC into 4 random subsets (simulating per-year extraction)",
+    "results": [
+      {
+        "R_b_extracted": 0.006971530752962601,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.0367595772480434,
+        "pull": -5.680382770401736,
+        "passes": false,
+        "N_had": 182591,
+        "N_tt": 8850,
+        "f_s": 0.17833847232338942,
+        "f_d": 0.048468982589503315,
+        "n_valid_toys": 200,
+        "year_label": "subset_1"
+      },
+      {
+        "R_b_extracted": 0.006954535742880955,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.003914013330007013,
+        "pull": -53.353283867519394,
+        "passes": false,
+        "N_had": 182591,
+        "N_tt": 8889,
+        "f_s": 0.178472651992705,
+        "f_d": 0.04868257471616892,
+        "n_valid_toys": 200,
+        "year_label": "subset_2"
+      },
+      {
+        "R_b_extracted": 0.0032837600006367304,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.002071324422635634,
+        "pull": -102.58954979586188,
+        "passes": false,
+        "N_had": 182591,
+        "N_tt": 8937,
+        "f_s": 0.17754982447108564,
+        "f_d": 0.04894545733360352,
+        "n_valid_toys": 200,
+        "year_label": "subset_3"
+      },
+      {
+        "R_b_extracted": 0.004908737108164068,
+        "R_b_truth": 0.21578,
+        "sigma_stat": 0.0026512987567426784,
+        "pull": -79.53508157296739,
+        "passes": false,
+        "N_had": 182591,
+        "N_tt": 8975,
+        "f_s": 0.17820429265407386,
+        "f_d": 0.049153572739072574,
+        "n_valid_toys": 200,
+        "year_label": "subset_4"
+      }
+    ],
+    "chi2": 0.7572672577264355,
+    "ndf": 3,
+    "p_value": 0.8596584058704292,
+    "passes": true
+  }
+}

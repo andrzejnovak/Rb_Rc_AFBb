@@ -1,0 +1,18 @@
+{
+  "data_events_total": 5000,
+  "data_events_passAll": 4684,
+  "mc_events_total": 5000,
+  "mc_events_passAll": 4736,
+  "data_pass_fraction": 0.9368,
+  "mc_pass_fraction": 0.9472,
+  "bFlag_distribution": {
+    "-1": 293,
+    "4": 4391
+  },
+  "d0_sentinel_fraction_data": 0.3561608849841654,
+  "d0_sentinel_fraction_mc": 0.36953877884854736,
+  "track_weight_mean_data": 1.0225549936294556,
+  "track_weight_mean_mc": 1.0226409435272217,
+  "track_weight_std_data": 0.0401022844016552,
+  "track_weight_std_mc": 0.03978196159005165
+}

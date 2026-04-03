@@ -1,0 +1,110 @@
+[
+  {
+    "filename": "figures/rb_3tag_stability_10pct.pdf",
+    "description": "rb 3tag stability 10pct"
+  },
+  {
+    "filename": "figures/afb_kappa_10pct.pdf",
+    "description": "afb kappa 10pct"
+  },
+  {
+    "filename": "figures/afb_qfb_vs_costheta_10pct.pdf",
+    "description": "afb qfb vs costheta 10pct"
+  },
+  {
+    "filename": "figures/systematics_breakdown_10pct.pdf",
+    "description": "systematics breakdown 10pct"
+  },
+  {
+    "filename": "figures/rb_comparison_mc_data.pdf",
+    "description": "rb comparison mc data"
+  },
+  {
+    "filename": "F1b_rb_stability_10pct.png",
+    "type": "result",
+    "script": "phase4_inference/4b_partial/src/plot_phase4b.py",
+    "description": "R_b operating point stability: MC pseudo-data vs 10% data",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:23:39.133726+00:00",
+    "script_mtime": "2026-04-03T19:17:31+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F2b_afb_angular_10pct.png",
+    "type": "result",
+    "script": "phase4_inference/4b_partial/src/plot_phase4b.py",
+    "description": "A_FB^b angular distribution from 10% data (kappa=0.3)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:24:15.556954+00:00",
+    "script_mtime": "2026-04-03T19:17:31+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F3b_d0_sigma_data_mc.png",
+    "type": "data_mc",
+    "script": "phase4_inference/4b_partial/src/plot_phase4b.py",
+    "description": "Signed d0/sigma_d0 data vs MC comparison (log scale)",
+    "lower_panel": "pull",
+    "is_2d": false,
+    "created": "2026-04-03T19:24:55.174466+00:00",
+    "script_mtime": "2026-04-03T19:17:31+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F4b_fd_vs_fs_10pct.png",
+    "type": "result",
+    "script": "phase4_inference/4b_partial/src/plot_phase4b.py",
+    "description": "Double-tag vs single-tag fraction: MC and 10% data",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:25:32.660614+00:00",
+    "script_mtime": "2026-04-03T19:17:31+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F5b_systematic_breakdown_10pct.png",
+    "type": "systematic_impact",
+    "script": "phase4_inference/4b_partial/src/plot_phase4b.py",
+    "description": "R_b systematic uncertainty breakdown (10% data)",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:26:10.793125+00:00",
+    "script_mtime": "2026-04-03T19:17:31+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "F7b_kappa_consistency_10pct.png",
+    "type": "result",
+    "script": "phase4_inference/4b_partial/src/plot_phase4b.py",
+    "description": "A_FB^b kappa consistency: MC pseudo-data vs 10% data",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:26:48.527236+00:00",
+    "script_mtime": "2026-04-03T19:17:31+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "S1b_tag_fractions_comparison.png",
+    "type": "diagnostic",
+    "script": "phase4_inference/4b_partial/src/plot_phase4b.py",
+    "description": "Single-tag fraction vs threshold: MC and 10% data",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:27:26.960750+00:00",
+    "script_mtime": "2026-04-03T19:17:31+00:00",
+    "observable_type": "count"
+  },
+  {
+    "filename": "S2b_hemisphere_charge_data_mc.png",
+    "type": "diagnostic",
+    "script": "phase4_inference/4b_partial/src/plot_phase4b.py",
+    "description": "Q_FB distribution: MC (full) vs 10% data at four kappa values",
+    "lower_panel": "none",
+    "is_2d": false,
+    "created": "2026-04-03T19:28:07.595791+00:00",
+    "script_mtime": "2026-04-03T19:17:31+00:00",
+    "observable_type": "count"
+  }
+]

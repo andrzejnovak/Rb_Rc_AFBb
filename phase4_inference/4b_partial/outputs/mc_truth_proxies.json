@@ -1,0 +1,71 @@
+{
+  "description": "MC truth proxy investigation. Since pid=-999 and process=-1 in MC (no truth labels), we use kinematic proxies: vertex mass (B~5GeV, D~2GeV, uds~0), displaced track multiplicity, high-pT tracks (semileptonic b decays), and missing momentum.",
+  "proxy_tags": {
+    "n_events": 730365,
+    "vertex_mass_b": {
+      "n_tagged": 43603,
+      "fraction": 0.05970028684287993,
+      "description": "Max hemisphere vertex mass > 3.5 GeV",
+      "overlap_existing_wp5": 1.0,
+      "overlap_existing_wp10": 0.9371832213379814
+    },
+    "vertex_mass_c": {
+      "n_tagged": 228383,
+      "fraction": 0.3126970761194745,
+      "description": "Max hemisphere vertex mass 1.0-3.5 GeV",
+      "overlap_existing_wp5": 0.971044254607392,
+      "overlap_existing_wp10": 0.643445440334876
+    },
+    "vertex_mass_uds": {
+      "n_tagged": 458379,
+      "fraction": 0.6276026370376455,
+      "description": "Max hemisphere vertex mass < 1.0 GeV",
+      "overlap_existing_wp5": 0.4409298855314052,
+      "overlap_existing_wp10": 0.08072359335833448
+    },
+    "multiplicity_b": {
+      "n_tagged": 254561,
+      "fraction": 0.34853942891567913,
+      "description": "Max hemisphere displaced tracks >= 3",
+      "overlap_existing_wp5": 0.9987350772506394,
+      "overlap_existing_wp10": 0.7678395355140811
+    },
+    "highpt_lepton": {
+      "n_tagged": 555150,
+      "fraction": 0.7600994023536177,
+      "description": "Max hemisphere high-pT tracks >= 1",
+      "overlap_existing_wp5": 0.6647032333603531,
+      "overlap_existing_wp10": 0.3252112041790507
+    },
+    "combined_b": {
+      "n_tagged": 256600,
+      "fraction": 0.3513311837232069,
+      "description": "Vertex mass > 3.5 OR displaced multiplicity >= 3"
+    },
+    "mass_distribution": {
+      "mean": 1.7608736817989237,
+      "std": 1.4581733353061614,
+      "median": 1.355255928810541,
+      "q25": 0.7392787545755529,
+      "q75": 2.3560254656367623,
+      "n_nonzero": 430325
+    }
+  },
+  "missing_momentum": {
+    "miss_p_mean": 80.377488178579,
+    "miss_p_std": 7.30979438017462,
+    "miss_pt_mean": 9.01912552102485,
+    "miss_pt_std": 6.492267296023188,
+    "vis_p_mean": 10.822508769663187,
+    "vis_E_mean": 91.19999694824219
+  },
+  "vertex_mass_stats": {
+    "mean": 1.7608736817989237,
+    "std": 1.4581733353061614,
+    "median": 1.355255928810541,
+    "q25": 0.7392787545755529,
+    "q75": 2.3560254656367623,
+    "n_nonzero": 430325
+  },
+  "finding": "The vertex mass provides a useful b-enriched proxy (mass > 3.5 GeV selects events with heavier secondary vertices, characteristic of B hadrons). However, without true MC labels, we cannot quantify the actual b-purity of these proxy tags. The overlap analysis shows that high-mass events are strongly correlated with our existing b-tag, confirming the tag preferentially selects events with displaced heavy vertices."
+}
