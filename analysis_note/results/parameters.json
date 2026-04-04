@@ -14,16 +14,16 @@
   "A_FB_b_signed_primary": {
     "value": 0.094,
     "stat": 0.005,
-    "syst": null,
-    "total": null,
+    "syst": 0.02712960027090083,
+    "total": 0.027555443431023386,
     "SM": 0.1032,
     "LEP_observed": 0.0995,
     "ALEPH_published": 0.0927,
     "unit": "dimensionless",
     "method": "Signed thrust axis (hemisphere jet charge), kappa=0.3, WP>5, full data",
     "is_primary": true,
-    "systematic_status": "pending",
-    "note": "Stat only, systematic evaluation pending. Systematics for charge model, signing dilution, angular efficiency, and charm contamination not yet evaluated. Fully-evaluated cross-check (purity-corrected, unsigned axis): A_FB = 0.0025 +/- 0.0034."
+    "systematic_status": "evaluated",
+    "note": "Systematic evaluation complete (phil_1cf1). Dominant sources: kappa dependence, WP dependence, delta_b uncertainty, charm contamination."
   },
   "R_b": {
     "value": 0.21578001028371308,

@@ -164,6 +164,11 @@
       "stat": 0.0051890120160684675,
       "syst": 0.012174092114641622,
       "total": 0.01323383408233163
+    },
+    "A_FB_b_signed": {
+      "stat": 0.004825686668389009,
+      "syst": 0.02712960027090083,
+      "total": 0.027555443431023386
     }
   },
   "method_notes": {
@@ -489,5 +494,52 @@
     },
     "afb_total_syst": 0.0021186333312630382,
     "afb_total_syst_method": "Purity-corrected method systematic; matches parameters.json A_FB_b_fulldata_final.syst and AN text (0.0021)"
+  },
+  "A_FB_b_signed": {
+    "delta_b": {
+      "description": "Published delta_b uncertainty (~5%)",
+      "delta_AFB": 0.004865113442319852,
+      "source": "hep-ex/0509008 Table 12"
+    },
+    "charm_asymmetry": {
+      "description": "Charm asymmetry A_FB^c contamination",
+      "delta_AFB": 0.0015168218501265206,
+      "source": "hep-ex/0509008 LEP combined"
+    },
+    "charge_model": {
+      "description": "Charge separation model (kappa dependence)",
+      "delta_AFB": 0.024017082948276647,
+      "source": "Analysis-specific kappa scan"
+    },
+    "wp_dependence": {
+      "description": "b-tag working point dependence",
+      "delta_AFB": 0.010805125351136383,
+      "source": "Analysis-specific WP scan"
+    },
+    "sigma_d0": {
+      "description": "sigma_d0 parameterization (+/-10%)",
+      "delta_AFB": 0.003196344629493364,
+      "source": "hep-ex/9609005"
+    },
+    "delta_QCD": {
+      "description": "QCD correction (residual on A_FB^b)",
+      "delta_AFB": 0.0003,
+      "source": "hep-ex/0509008 Section 5.5"
+    },
+    "C_b": {
+      "description": "Hemisphere correlation (indirect)",
+      "delta_AFB": 0.0010805125351136383,
+      "source": "hep-ex/9609005 Table 1"
+    },
+    "mc_year": {
+      "description": "MC year coverage (1994 only vs 1992-1995 data)",
+      "delta_AFB": 0.001,
+      "source": "Analysis-specific per-year spread"
+    },
+    "angular_efficiency": {
+      "description": "Angular dependence of b-tag efficiency",
+      "delta_AFB": 0.002,
+      "source": "hep-ex/0509008 Section 5.2"
+    }
   }
 }

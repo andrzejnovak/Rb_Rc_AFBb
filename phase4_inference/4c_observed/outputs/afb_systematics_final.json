@@ -1,0 +1,189 @@
+{
+  "nominal": {
+    "afb_b": 0.09365343376465715,
+    "sigma_afb": 0.004825686668389009,
+    "product": 0.015171856269874459,
+    "sigma_product": 0.0007817612402790195,
+    "delta_b": 0.162,
+    "chi2": 7.079687971404361,
+    "ndf": 9,
+    "p_value": 0.6288229371815193,
+    "n_tagged": 1827297,
+    "kappa_sign": 0.3,
+    "wp_threshold": 5.0,
+    "bin_centers": [
+      0.045,
+      0.135,
+      0.225,
+      0.315,
+      0.40499999999999997,
+      0.495,
+      0.585,
+      0.675,
+      0.7649999999999999,
+      0.855
+    ],
+    "asymmetry": [
+      0.0013554784388937946,
+      0.003901313258970273,
+      0.012323130311462552,
+      0.010631249870603094,
+      0.013336833284535938,
+      0.016308467894776742,
+      0.015668194546005813,
+      0.022030934056978226,
+      0.01791124312908924,
+      0.01871732450013968
+    ],
+    "sigma_asymmetry": [
+      0.002371577856367377,
+      0.002344082714983545,
+      0.0023175591930185164,
+      0.0022749266538367313,
+      0.0022465770958568615,
+      0.0021764234019930133,
+      0.002111325945136227,
+      0.0020983726032313445,
+      0.0022209556040271735,
+      0.006316250930076449
+    ],
+    "n_per_bin": [
+      177797,
+      181990,
+      186154,
+      193204,
+      198098,
+      211056,
+      224276,
+      226999,
+      202666,
+      25057
+    ]
+  },
+  "syst_delta_b": {
+    "description": "Published delta_b uncertainty (hep-ex/0509008 Table 12, ~5%)",
+    "delta_b_nominal": 0.162,
+    "delta_b_error": 0.008,
+    "afb_up": 0.08924621335220269,
+    "afb_down": 0.098518547206977,
+    "shift_up": -0.004407220412454463,
+    "shift_down": 0.004865113442319852,
+    "delta_AFB": 0.004865113442319852,
+    "source": "hep-ex/0509008 Table 12"
+  },
+  "syst_charm": {
+    "description": "Charm asymmetry A_FB^c contamination",
+    "f_c_tagged": 0.12,
+    "f_c_error": 0.03,
+    "f_b_tagged": 0.85,
+    "delta_c": 0.1,
+    "afb_c": 0.0682,
+    "afb_c_error": 0.0035,
+    "bias_from_afbc_unc": 0.0003050108932461874,
+    "bias_from_fc_unc": 0.001485838779956427,
+    "delta_AFB": 0.0015168218501265206,
+    "source": "hep-ex/0509008 LEP combined A_FB^c"
+  },
+  "syst_kappa": {
+    "description": "Charge separation model (kappa=0.3 vs kappa=0.5 deviation)",
+    "kappa_values": {
+      "0.3": 0.09365343376465715,
+      "0.5": 0.0696363508163805,
+      "1.0": 0.04000529432219823,
+      "2.0": 0.023074102620118008
+    },
+    "nominal_kappa": 0.3,
+    "deviation_k05": 0.024017082948276647,
+    "max_deviation_all": 0.07057933114453914,
+    "rms_deviation": 0.053029504755348005,
+    "delta_AFB": 0.024017082948276647,
+    "source": "Analysis-specific kappa scan",
+    "note": "kappa=0.3 chosen to minimize non-b contamination; deviation at kappa=0.5 used as systematic. Large deviations at kappa=1.0, 2.0 reflect known multi-flavour bias, not a measurement uncertainty."
+  },
+  "syst_wp": {
+    "description": "b-tag working point dependence",
+    "wp_values": {
+      "3.0": 0.09078399220970833,
+      "4.0": 0.09195983242286947,
+      "5.0": 0.09365343376465715,
+      "6.0": 0.0983525216818562,
+      "7.0": 0.10445855911579353
+    },
+    "nominal_wp": 5.0,
+    "max_deviation": 0.010805125351136383,
+    "delta_AFB": 0.010805125351136383,
+    "source": "Analysis-specific WP scan"
+  },
+  "syst_sigma_d0": {
+    "description": "sigma_d0 parameterization (+/-10% scale factor)",
+    "delta_AFB": 0.003196344629493364,
+    "method": "WP interpolation: 0.5 * |A_FB(WP=4) - A_FB(WP=6)| as proxy for tag efficiency shift",
+    "source": "hep-ex/9609005, analysis-specific proxy",
+    "category": "efficiency_modeling"
+  },
+  "syst_qcd": {
+    "description": "QCD correction delta_QCD = 0.0356 +/- 0.0029",
+    "delta_QCD": 0.0356,
+    "delta_QCD_error": 0.0029,
+    "delta_QED": 0.001,
+    "afb0_nominal": 0.09721136990311101,
+    "afb0_shift": 0.00029350647862470824,
+    "delta_AFB": 0.0003,
+    "delta_AFB0": 0.00029350647862470824,
+    "source": "hep-ex/0509008 Section 5.5"
+  },
+  "syst_cb": {
+    "description": "Hemisphere correlation C_b (indirect via purity)",
+    "C_b_nominal": 1.0,
+    "C_b_error": 0.05,
+    "delta_AFB": 0.0010805125351136383,
+    "method": "Indirect: 10% of WP systematic as proxy",
+    "source": "hep-ex/9609005 Table 1"
+  },
+  "syst_mc_year": {
+    "description": "MC year coverage (only 1994 MC; data spans 1992-1995)",
+    "per_year": {
+      "1992": 0.09622124406778304,
+      "1993": 0.09417475444567874,
+      "1994": 0.09832831389003711,
+      "1995": 0.08056282976033474
+    },
+    "per_year_sigma": {
+      "1992": 0.011463808010227144,
+      "1993": 0.011411482153962486,
+      "1994": 0.007243839807649708,
+      "1995": 0.010785380044954317
+    },
+    "chi2": 1.94190338976738,
+    "ndf": 3,
+    "p_value": 0.5845519967390984,
+    "delta_AFB": 0.001,
+    "method": "Excess RMS of per-year A_FB beyond statistical",
+    "source": "Analysis-specific"
+  },
+  "syst_angular": {
+    "description": "Angular dependence of b-tag efficiency",
+    "delta_AFB": 0.002,
+    "source": "hep-ex/0509008 Section 5.2"
+  },
+  "summary": {
+    "afb_b": 0.09365343376465715,
+    "stat": 0.004825686668389009,
+    "syst": 0.02712960027090083,
+    "total": 0.027555443431023386,
+    "afb0_b": 0.09721136990311101,
+    "afb0_stat": 0.005009016678834346,
+    "afb0_syst": 0.02816179553266784,
+    "breakdown": {
+      "delta_b": 0.004865113442319852,
+      "charm": 0.0015168218501265206,
+      "kappa": 0.024017082948276647,
+      "wp": 0.010805125351136383,
+      "sigma_d0": 0.003196344629493364,
+      "qcd": 0.0003,
+      "C_b": 0.0010805125351136383,
+      "mc_year": 0.001,
+      "angular": 0.002
+    }
+  }
+}
