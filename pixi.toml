@@ -36,8 +36,8 @@ rich = ">=13.0"
 # # Unbinned likelihood fits
 # zfit = ">=0.20"
 # # MVA / classification
-# xgboost = ">=2.0"
-# scikit-learn = ">=1.3"
+xgboost = ">=2.0"
+# scikit-learn already in [dependencies]
 # # Columnar event processing at scale
 # coffea = ">=2024.0"
 
@@ -86,6 +86,7 @@ p4b-rb = "python phase4_inference/4b_partial/src/rb_extraction_10pct.py"
 p4b-syst = "python phase4_inference/4b_partial/src/systematics_10pct.py"
 p4b-plots = "python phase4_inference/4b_partial/src/plot_phase4b.py"
 p4b-all = "python phase4_inference/4b_partial/src/run_phase4b.py && python phase4_inference/4b_partial/src/rb_extraction_10pct.py && python phase4_inference/4b_partial/src/systematics_10pct.py && python phase4_inference/4b_partial/src/plot_phase4b.py"
+p4c-bdt = "python phase4_inference/4c_observed/src/bdt_sv_optimization.py"
 # --- Analysis tasks: add as you write scripts ---
 # The "all" task chains the full sequence — this is the reproducibility contract.
 all = "python phase1_exploration/src/explore_files.py && python phase1_exploration/src/survey_branches.py && python phase1_exploration/src/survey_variables.py && python phase3_selection/src/preselection.py && python phase3_selection/src/sigma_d0_calibration.py && python phase3_selection/src/debug_sign_d0_v4.py && python phase3_selection/src/d0_sign_validation.py && python phase3_selection/src/hemisphere_tag.py && python phase3_selection/src/jet_charge.py && python phase3_selection/src/double_tag_counting.py && python phase3_selection/src/closure_tests.py && python phase3_selection/src/track_weight_investigation.py && python phase3_selection/src/d17_vertex_investigation.py && python phase3_selection/src/plot_all.py && python phase4_inference/4a_expected/src/mc_efficiency_calibration.py && python phase4_inference/4a_expected/src/hemisphere_correlation.py && python phase4_inference/4a_expected/src/three_tag_rb_extraction.py && python phase4_inference/4a_expected/src/purity_corrected_afb.py && python phase4_inference/4a_expected/src/systematics_v2.py && python phase4_inference/4a_expected/src/closure_and_stress.py && python phase4_inference/4a_expected/src/plot_phase4a_v2.py && python phase4_inference/4a_expected/src/write_results_json_v2.py && python phase4_inference/4b_partial/src/run_phase4b.py && python phase4_inference/4b_partial/src/rb_extraction_10pct.py && python phase4_inference/4b_partial/src/systematics_10pct.py && python phase4_inference/4b_partial/src/plot_phase4b.py"

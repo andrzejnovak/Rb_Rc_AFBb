@@ -1,0 +1,31 @@
+{
+  "ttheta_stats": {
+    "min": 0.45109620690345764,
+    "max": 2.690559148788452,
+    "mean": 1.5707364082336426,
+    "cos_mean": 3.961267429986037e-05,
+    "n_cos_pos": 1443480,
+    "n_cos_neg": 1443781,
+    "ratio_pos_neg": 0.9997915196279769
+  },
+  "critical_test_qfb_halves": {
+    "mean_qfb_all": -0.008045043275568764,
+    "mean_qfb_fwd": -0.007722749768872931,
+    "mean_qfb_bwd": -0.008367022400782064,
+    "diff_fwd_minus_bwd": 0.0006442726319091331
+  },
+  "qfb_verification": {
+    "max_abs_diff": 0.0,
+    "correct": true
+  },
+  "counting_method": {},
+  "flip_test": {
+    "slope_original": 0.0008481152512202525,
+    "slope_flipped": -0.0008481152512202525,
+    "sum": 0.0
+  },
+  "hemisphere_consistency": {
+    "n_h0_btag_strong": 165148,
+    "n_h1_btag_strong": 166171
+  }
+}

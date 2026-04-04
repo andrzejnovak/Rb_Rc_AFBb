@@ -281,5 +281,25 @@
     "LEP_observed": 0.0995,
     "description": "A_FB^b from double-tagged events at kappa=2.0, WP=5.0. Largest single-kappa signal recovery.",
     "session": "eloise_f4f5"
+  },
+  "R_b_sv_tag": {
+    "value": 0.216937028075739,
+    "stat": 0.00034233672774887586,
+    "SM": 0.21578,
+    "method": "3-tag with SV-enhanced combined tag",
+    "eps_c_over_eps_b": 0.7473214264612953,
+    "working_point": "SV tight=4.0, loose=2.0"
+  },
+  "R_b_sv_tag_combined": {
+    "value": 0.21736874253355576,
+    "stat": 0.00012654078400782323,
+    "SM": 0.21578,
+    "method": "3-tag with SV-enhanced tag, combined WPs"
+  },
+  "A_FB_b_sv_tag": {
+    "value": 0.05210092958151119,
+    "stat": 0.003684961721636421,
+    "method": "SV-tagged double-tag, kappa2.0_svloose",
+    "n_double_tagged": 567887
   }
 }
