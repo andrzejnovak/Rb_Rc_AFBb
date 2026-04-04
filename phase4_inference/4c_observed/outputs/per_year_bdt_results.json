@@ -1,0 +1,74 @@
+{
+  "description": "Per-year R_b and A_FB^b extraction using BDT tagger (magnus_435d)",
+  "bdt_working_point": {
+    "thr_tight": 0.8,
+    "thr_loose": 0.5
+  },
+  "full_data_rb": 0.21577299798251426,
+  "per_year": [
+    {
+      "year": 1992,
+      "n_events": 522097,
+      "R_b_bdt_sf": 0.21572387106332985,
+      "sigma_stat_rb": 0.0008790566648510916,
+      "chi2_rb": 50.07220450856451,
+      "ndf_rb": 7,
+      "sf_tight": 0.9187629568645997,
+      "sf_loose": 0.9772568129237851,
+      "A_FB_b": -0.0612756138491541,
+      "sigma_stat_afb": 0.02287628776846565,
+      "afb_chi2_ndf": "12.3/8"
+    },
+    {
+      "year": 1993,
+      "n_events": 509624,
+      "R_b_bdt_sf": 0.2156185723847451,
+      "sigma_stat_rb": 0.0008428305544147858,
+      "chi2_rb": 188.44050718121102,
+      "ndf_rb": 7,
+      "sf_tight": 1.0717342402389918,
+      "sf_loose": 1.160515735034372,
+      "A_FB_b": -0.0638773360720708,
+      "sigma_stat_afb": 0.021948239705572095,
+      "afb_chi2_ndf": "13.1/8"
+    },
+    {
+      "year": 1994,
+      "n_events": 1292201,
+      "R_b_bdt_sf": 0.2157791097033741,
+      "sigma_stat_rb": 0.0005596499760515178,
+      "chi2_rb": 112.78165692631475,
+      "ndf_rb": 7,
+      "sf_tight": 0.9623664713639507,
+      "sf_loose": 1.0385189916762037,
+      "A_FB_b": -0.07801525985770133,
+      "sigma_stat_afb": 0.014386730167290659,
+      "afb_chi2_ndf": "8.4/8"
+    },
+    {
+      "year": 1995,
+      "n_events": 563339,
+      "R_b_bdt_sf": 0.21564434503825117,
+      "sigma_stat_rb": 0.0007382095312949604,
+      "chi2_rb": 165.9057313492624,
+      "ndf_rb": 7,
+      "sf_tight": 1.066153728666687,
+      "sf_loose": 1.1056851194145287,
+      "A_FB_b": -0.05392504211070002,
+      "sigma_stat_afb": 0.02083384766221371,
+      "afb_chi2_ndf": "4.2/8"
+    }
+  ],
+  "consistency_rb": {
+    "chi2": 0.0351608533170266,
+    "ndf": 3,
+    "p_value": 0.9982648721862888,
+    "passes": true
+  },
+  "consistency_afb": {
+    "chi2": 1.0600480028283834,
+    "ndf": 3,
+    "p_value": 0.7867263364388057,
+    "passes": true
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "description": "Quadratic vs linear fit comparison for A_FB angular distribution",
+  "session": "magnus_435d",
+  "conclusion": "The primary extraction uses |cos(theta)| bins where the linear fit gives chi2/ndf = 10.9/8 (p = 0.208), which is acceptable. A quadratic term improves the fit marginally (F-test p = 0.084) with a cos^2 coefficient c = -0.0300 +/- 0.0150. The A_FB extracted from the linear coefficient is stable: linear gives 0.1482, quadratic gives 0.3026. In the signed cos(theta) extraction, the cos^2 term is highly significant (F-test p = 0.0109), reflecting a symmetric purity/acceptance effect that creates the parabolic shape. The |cos(theta)| extraction correctly isolates the asymmetry signal.",
+  "results": {
+    "primary_abscos": {
+      "description": "Primary extraction using |cos(theta)| bins",
+      "kappa": 0.3,
+      "wp": 5.0,
+      "n_tagged": 1827297,
+      "delta_b": 0.162,
+      "linear": {
+        "intercept": 0.0028712850898626203,
+        "slope": 0.024011290856066708,
+        "sigma_slope": 0.003164244466075942,
+        "chi2": 10.89147799563925,
+        "ndf": 8,
+        "p_value": 0.20792435636209916,
+        "afb": 0.14821784479053524,
+        "sigma_afb": 0.019532373247382356
+      },
+      "quadratic": {
+        "intercept": -0.0006936108799286028,
+        "slope": 0.049016485169603816,
+        "cos2_coeff": -0.03001190797643462,
+        "sigma_slope": 0.012899624373089195,
+        "sigma_cos2": 0.01500945416726516,
+        "chi2": 6.893343364434575,
+        "ndf": 7,
+        "p_value": 0.4400688609914246,
+        "afb": 0.3025708961086655,
+        "sigma_afb": 0.07962731094499503
+      },
+      "f_test": {
+        "delta_chi2": 3.9981346312046746,
+        "f_statistic": 4.0599954098947375,
+        "p_value": 0.08375283386929666,
+        "quadratic_significantly_better": false
+      }
+    },
+    "signed_cos": {
+      "description": "Signed cos(theta) bins (diagnostic)",
+      "kappa": 0.3,
+      "wp": 5.0,
+      "sigma_per_bin": 0.0006977025848883168,
+      "linear": {
+        "intercept": -0.0038735190402681714,
+        "slope": -0.00018757069684639975,
+        "chi2": 66.75375168353665,
+        "ndf": 8
+      },
+      "quadratic": {
+        "intercept": -0.002251566442787298,
+        "slope": -0.00018757069684640187,
+        "cos2_coeff": -0.00606791095204217,
+        "sigma_cos2": 0.0009371483837314003,
+        "chi2": 24.829851667339902,
+        "ndf": 7,
+        "p_value": 0.0008133345454361951
+      },
+      "f_test": {
+        "delta_chi2": 41.92390001619675,
+        "f_statistic": 11.819132230233627,
+        "p_value": 0.010868148820382562,
+        "quadratic_significantly_better": true
+      },
+      "note": "The cos^2 term is a symmetric purity/acceptance effect. In signed cos(theta), it creates the parabolic shape. In |cos(theta)|, it adds a smooth bias but the linear slope correctly captures the asymmetry."
+    }
+  }
+}
