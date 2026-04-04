@@ -2,14 +2,14 @@
   "R_b_BDT_primary": {
     "value": 0.2155,
     "stat": 0.0004,
-    "syst": null,
-    "total": null,
+    "syst": 0.027,
+    "total": 0.027,
     "SM": 0.21578,
     "unit": "dimensionless",
     "method": "BDT 3-tag with SV features (tight=0.80, loose=0.50), SF-calibrated, full data",
     "is_primary": true,
-    "systematic_status": "pending",
-    "note": "Stat-only. Systematic evaluation of BDT-based extraction is ongoing. Cut-based cross-check total = 0.027."
+    "systematic_status": "evaluated_transfer",
+    "note": "Systematic transferred from cut-based cross-check (conservative). Quadrature sum = 0.020; total 0.027 includes eps_c envelope added linearly. See AN v8 Section 7."
   },
   "A_FB_b_signed_primary": {
     "value": 0.094,
