@@ -84,8 +84,8 @@
     "description": "R_b across 8 working point configurations (SF-calibrated, full data)",
     "lower_panel": "none",
     "is_2d": false,
-    "created": "2026-04-03T19:33:15.848071+00:00",
-    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "created": "2026-04-04T08:20:32.761997+00:00",
+    "script_mtime": "2026-04-04T08:20:20+00:00",
     "observable_type": "derived"
   },
   {
@@ -95,8 +95,8 @@
     "description": "A_FB^b across kappa values, inclusive method (full data)",
     "lower_panel": "none",
     "is_2d": false,
-    "created": "2026-04-03T19:33:16.627606+00:00",
-    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "created": "2026-04-04T08:20:38.796140+00:00",
+    "script_mtime": "2026-04-04T08:20:20+00:00",
     "observable_type": "derived"
   },
   {
@@ -106,8 +106,8 @@
     "description": "Systematic uncertainty breakdown for R_b and A_FB^b (full data)",
     "lower_panel": "none",
     "is_2d": false,
-    "created": "2026-04-03T19:33:17.085503+00:00",
-    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "created": "2026-04-04T08:20:39.490000+00:00",
+    "script_mtime": "2026-04-04T08:20:20+00:00",
     "observable_type": "derived"
   },
   {
@@ -117,8 +117,8 @@
     "description": "Per-year R_b and A_FB^b consistency (1992-1995, full data)",
     "lower_panel": "none",
     "is_2d": false,
-    "created": "2026-04-03T19:33:17.952450+00:00",
-    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "created": "2026-04-04T08:20:40.357016+00:00",
+    "script_mtime": "2026-04-04T08:20:20+00:00",
     "observable_type": "derived"
   },
   {
@@ -128,8 +128,8 @@
     "description": "R_b and A_FB^b progression from MC to 10% to full data",
     "lower_panel": "none",
     "is_2d": false,
-    "created": "2026-04-03T19:33:18.735353+00:00",
-    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "created": "2026-04-04T08:20:41.171671+00:00",
+    "script_mtime": "2026-04-04T08:20:20+00:00",
     "observable_type": "derived"
   },
   {
@@ -139,8 +139,8 @@
     "description": "BDT cross-check R_b vs cut-based (full data)",
     "lower_panel": "none",
     "is_2d": false,
-    "created": "2026-04-03T19:33:19.366314+00:00",
-    "script_mtime": "2026-04-03T18:35:49+00:00",
+    "created": "2026-04-04T08:20:41.819242+00:00",
+    "script_mtime": "2026-04-04T08:20:20+00:00",
     "observable_type": "derived"
   }
 ]

@@ -1,4 +1,30 @@
 {
+  "R_b_BDT_primary": {
+    "value": 0.2155,
+    "stat": 0.0004,
+    "syst": null,
+    "total": null,
+    "SM": 0.21578,
+    "unit": "dimensionless",
+    "method": "BDT 3-tag with SV features (tight=0.80, loose=0.50), SF-calibrated, full data",
+    "is_primary": true,
+    "systematic_status": "pending",
+    "note": "Stat-only. Systematic evaluation of BDT-based extraction is ongoing. Cut-based cross-check total = 0.027."
+  },
+  "A_FB_b_signed_primary": {
+    "value": 0.094,
+    "stat": 0.005,
+    "syst": null,
+    "total": null,
+    "SM": 0.1032,
+    "LEP_observed": 0.0995,
+    "ALEPH_published": 0.0927,
+    "unit": "dimensionless",
+    "method": "Signed thrust axis (hemisphere jet charge), kappa=0.3, WP>5, full data",
+    "is_primary": true,
+    "systematic_status": "pending",
+    "note": "Stat only, systematic evaluation pending. Systematics for charge model, signing dilution, angular efficiency, and charm contamination not yet evaluated. Fully-evaluated cross-check (purity-corrected, unsigned axis): A_FB = 0.0025 +/- 0.0034."
+  },
   "R_b": {
     "value": 0.21578001028371308,
     "stat": 0.0002649384172009339,

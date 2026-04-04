@@ -287,6 +287,8 @@ def plot_systematics_breakdown():
                  label=r"Total syst = %.4f" % total_syst_afb)
     ax2.legend(fontsize="x-small")
 
+    exp_label_data(ax1)
+
     save_and_register(
         fig, "systematics_breakdown_fulldata.png", str(SCRIPT_PATH),
         "Systematic uncertainty breakdown for R_b and A_FB^b (full data)",
@@ -436,6 +438,9 @@ def plot_calibration_progression():
     ax2.set_xticklabels(stages)
     ax2.set_ylabel(r"$A_{FB}^b$")
     ax2.legend(fontsize="small")
+
+    # Adjust spacing to prevent header overlap in two-panel layout
+    fig.subplots_adjust(wspace=0.35)
 
     save_and_register(
         fig, "calibration_progression.png", str(SCRIPT_PATH),

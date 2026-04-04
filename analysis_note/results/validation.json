@@ -107,6 +107,28 @@
       }
     ]
   },
+  "bdt_stability_fulldata": {
+    "chi2": 1.1,
+    "ndf": 12,
+    "chi2_ndf": 0.092,
+    "p_value": 1.0,
+    "passes": true,
+    "n_configs": 13,
+    "R_b_combined": 0.2155,
+    "sigma_combined": 0.0004,
+    "method": "BDT SF-calibrated 3-tag R_b stability across 13 threshold configurations, full data"
+  },
+  "signed_axis_afb_fulldata": {
+    "value": 0.094,
+    "stat": 0.005,
+    "kappa": 0.3,
+    "WP": 5.0,
+    "chi2_ndf": "4.5/8",
+    "ALEPH_published": 0.0927,
+    "pull_vs_ALEPH": 0.2,
+    "method": "Signed thrust axis (hemisphere jet charge), kappa=0.3, WP>5, full data",
+    "systematic_status": "pending"
+  },
   "precision_comparison": {
     "R_b_vs_ALEPH": {
       "our_total": 0.026,
